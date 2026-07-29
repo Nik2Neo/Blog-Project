@@ -70,6 +70,7 @@ footer {
     color: white;
     font-family: var(--texts);
     font-size: 16px;
+    padding: 0px 80px;
 }
 
 footer a {
