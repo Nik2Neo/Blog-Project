@@ -37,6 +37,7 @@ header {
     align-items: center;
     padding-left: 146px;
     font-family: var(--headlines);
+    font-size: 24px;
 }
 
 header img {
@@ -44,13 +45,13 @@ header img {
     width: 72px;
 }
 
-header nav ul {
+nav ul {
     display: flex;
     list-style-type: none;
     gap: 72px;
 }
 
-header nav ul a {
+nav ul a {
     color: white;
     text-decoration: none;
 }
@@ -61,8 +62,18 @@ main {
 }
 
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--primary-color);
     height: 128px;
+    color: white;
+    font-family: var(--texts);
+    font-size: 16px;
+}
+
+footer a {
+    color: white;
 }
 
 /** Headlines **/
@@ -72,3 +83,12 @@ footer {
 
 
 /** Images **/
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.yt-logo {
+    height: 44px;
+}
