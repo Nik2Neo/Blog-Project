@@ -1,0 +1,74 @@
+:root {
+    --primary-color: #1F6CB0;
+    --secondary-color: #E2B850;
+    --alternative-color: #E24C60;
+    --texts: "Palanquin";
+    --headlines: "Arima";
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/Arima/Arima-VariableFont_wght.ttf) format('woff2'); 
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/Arima/Palanquin/Palanquin-Regular.ttf) format('woff2'); 
+}
+
+/** General **/
+
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    background-color: var(--primary-color);
+    height: 128px;
+    align-items: center;
+    padding-left: 146px;
+    font-family: var(--headlines);
+}
+
+header img {
+    height: 72px;
+    width: 72px;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 72px;
+}
+
+header nav ul a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    background-color: var(--secondary-color);
+    height: 128px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    height: 128px;
+}
+
+/** Headlines **/
+
+
+/** Text **/
+
+
+/** Images **/
