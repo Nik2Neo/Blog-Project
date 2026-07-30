@@ -5,12 +5,16 @@ main {
     height: 100%;
     font-family: var(--texts);
     padding: 80px 32px;
-
 }
 
-.intro {
+.intro-section {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+h3 {
+    font-family: var(--headlines);
+    font-size: 32px;
 }
 
 /**Intro-Top**/
@@ -106,4 +110,26 @@ main {
 .intro-bottom {
     font-size: 24px;
     line-height: 1.2;
+}
+
+/**Weather-Section**/
+.weather-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 80px;
+
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.weather-section img {
+    width: 640px;
+}
+
+.weather-section p {
+    font-size: 24px;
+    line-height: 1.2;
+    padding-top: 88px;
 }
