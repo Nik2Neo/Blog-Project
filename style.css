@@ -30,6 +30,12 @@ html, body {
     scroll-behavior: smooth;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 header {
     display: flex;
     background-color: var(--primary-color);
@@ -56,13 +62,18 @@ nav ul a {
     text-decoration: none;
 }
 
-main {
-    background-color: var(--secondary-color);
+main {    
     height: 128px;
+    flex: 1;
+}
+
+section {
+    max-width: 1440px;
 }
 
 footer {
     display: flex;
+    bottom: 0;
     justify-content: space-between;
     align-items: center;
     background-color: var(--primary-color);
@@ -79,6 +90,15 @@ footer a {
 
 /** Headlines **/
 
+h3 {
+    font-family: var(--headlines);
+    font-size: 32px;
+    line-height: 120%;
+    font-weight: 600;
+    color: #54370D;
+
+    align-self: center;
+}
 
 /** Text **/
 
