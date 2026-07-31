@@ -1,6 +1,130 @@
+/** General **/
+
+* {
+    margin: 0;
+}
+
+main {
+    height: 100%;
+    font-family: var(--texts);
+    padding: 80px 32px;
+}
+
+h3 {
+    font-family: var(--headlines);
+    font-size: 32px;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+h1 {
+    color: var(--alternative-color);
+    font-family: var(--headlines);
+    font-size: 64px;
+    font-weight: 700 bold;
+    line-height: 1.2;
+}
+
+
+/**Intro-Top**/
+.intro-section {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.intro-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 48px;
+}
+
+/**Intro-Top-Left**/
+.intro-left {
+    max-width: 900px;
+    gap: 8px;
+}
+
+.intro-left p {
+    font-size: 28px;
+    line-height: 1.1;
+    padding-bottom: 32px;
+}
+
+.intro-icons {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 32px;
+}
+
+.intro-icons-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.intro-icons-item>img {
+    color: var(--primary-color);
+    height: 18px;
+    width: 16px;
+}
+
+/**Intro-Top-Right**/
+.intro-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    ;
+
+    width: 272px;
+
+    padding: 16px;
+    gap: 16px;
+
+    background-color: var(--primary-color);
+    border-radius: 30px;
+}
+
+.author {
+    text-align: center;
+    line-height: 1;
+}
+
+.author-name {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: var(--headlines);
+}
+
+.author-role {
+    font-size: 18px;
+}
+
+.author-text {
+    line-height: 1.2;
+}
+
+.intro-bottom {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+/** Carousel **/
+
 .carousel-section-2 {
     display: flex;
     flex-direction: column;
+    justify-self: center;
+    height: 550px;
+    gap: 64px;
+    width: 100%;
 }
 
 .carousel-images {
@@ -45,5 +169,51 @@
 
 .carousel-slide {
     position: relative;
+    justify-self: center;
+    height: 500px;
     max-width: 1300px;
+    align-items: center;
+}
+
+/** Carousel-Texts **/
+
+.carousel-text {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+    padding-top: 80px;
+    color: #3D3D3D;
+}
+
+
+/** Pro Tipps **/
+
+.pro-tipps-section {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+
+    padding-top: 80px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+    padding-top: 80px;
+    color: #3D3D3D;
+}
+
+.pro-tipps-section-box ol {
+    background-color: var(--secondary-color);
+    padding-left: 32px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 16px;
+}
+
+.pro-tipps-section-link {
+    color: var(--primary-color);
+    font-weight: bold;
 }

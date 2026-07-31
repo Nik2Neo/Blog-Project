@@ -73,7 +73,6 @@ section {
 
 footer {
     display: flex;
-    bottom: 0;
     justify-content: space-between;
     align-items: center;
     background-color: var(--primary-color);
