@@ -178,6 +178,335 @@ h3 {
     left: 30%;
 }
 
+/**Slider-Section**/
+.slider-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding-top: 80px;
+    gap: 88px;
+}
+
+.slider-section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 24px;
+
+    max-width: 979px;
+}
+
+.slider-section-text-headline {
+    display: flex;
+    align-items: center;
+}
+
+.slider-section-text-headline h1 {
+    color: var(--primary-color);
+    font-size: 52px;
+}
+
+.slider-section-text {
+    font-size: 24px;
+    font-family: var(--texts);
+    line-height: 1.1;
+}
+
+.slider-section-text-headline img {
+    height: 48px;
+}
+
+/**Slider**/
+
+.slider-landing_page {
+    position: relative;
+    
+    background-color: black;
+    
+    width: 1200px;
+    height: 533px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    overflow: hidden;
+
+    border-top-right-radius: 100px;
+}
+
+.slider-landing_page input {
+    z-index: 2;
+}
+
+.slider-landing_page_wrapper {
+    z-index: 1;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    width: 400%;
+    height: 100%;
+
+    transition: all 1s ease-in-out;
+}
+
+.slider-landing_page_element {
+    width: 100%;
+    height: 100%;
+
+    padding: 16px 24px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.element_one {
+    background-image: url(/img/carousel-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.element_two {
+    background-image: url(/img/copenhagen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.element_three {
+    background-image: url(/img/pattaya.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.element_four {
+    background-image: url(/img/mount_fuji.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider-landing_page input[value="one"]:checked~.slider-landing_page_wrapper {
+    transform: translatex(0%);
+}
+
+.slider-landing_page input[value="two"]:checked~.slider-landing_page_wrapper {
+    transform: translatex(-25%);
+}
+
+.slider-landing_page input[value="three"]:checked~.slider-landing_page_wrapper {
+    transform: translatex(-50%);
+}
+
+.slider-landing_page input[value="four"]:checked~.slider-landing_page_wrapper {
+    transform: translatex(-75%);
+}
+
+.slider-landing_page_element_text {
+    background-color: rgba(255, 255, 255, 0.1);
+    max-width: 881px;
+
+    
+    padding: 16px 24px;
+
+    gap: 8px;
+
+    text-align:left;
+}
+
+.slider-landing_page_element_text h2 {
+    font-family: var(--texts);
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    line-height: 1;
+}
+
+.slider-landing_page_element_text p {
+    font-family: var(--texts);
+    font-size: 28px;
+    color: white;
+    line-height: 1.1;
+}
+
+.slider-link {
+    display: block;
+    flex: 0 0 25%;
+    width: 25%;
+    height: 100%;
+    text-decoration: none;
+    
+
+/**Slider-Section**/
+.slider-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding-top: 80px;
+    gap: 88px;
+}
+
+.slider-section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 24px;
+
+    max-width: 979px;
+}
+
+.slider-section-text-headline {
+    display: flex;
+    align-items: center;
+}
+
+.slider-section-text-headline h1 {
+    color: var(--primary-color);
+    font-size: 52px;
+}
+
+.slider-section-text {
+    font-size: 24px;
+    font-family: var(--texts);
+    line-height: 1.1;
+}
+
+.slider-section-text-headline img {
+    height: 48px;
+}
+
+/**Slider**/
+
+.slider-landing_page {
+    position: relative;
+    
+    background-color: black;
+    
+    width: 1200px;
+    height: 533px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    overflow: hidden;
+
+    border-top-right-radius: 100px;
+}
+
+.slider-landing_page input {
+    z-index: 2;
+}
+
+.slider-landing_page_wrapper {
+    z-index: 1;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    width: 400%;
+    height: 100%;
+
+    transition: all 1s ease-in-out;
+}
+
+.slider-landing_page_element {
+    width: 100%;
+    height: 100%;
+
+    padding: 16px 24px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.element_one {
+    background-image: url(/img/carousel-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.element_two {
+    background-image: url(/img/copenhagen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.element_three {
+    background-image: url(/img/pattaya.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.element_four {
+    background-image: url(/img/mount_fuji.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider-landing_page input[value="one"]:checked~.slider-landing_page_wrapper {
+    transform: translatex(0%);
+}
+
+.slider-landing_page input[value="two"]:checked~.slider-landing_page_wrapper {
+    transform: translatex(-25%);
+}
+
+.slider-landing_page input[value="three"]:checked~.slider-landing_page_wrapper {
+    transform: translatex(-50%);
+}
+
+.slider-landing_page input[value="four"]:checked~.slider-landing_page_wrapper {
+    transform: translatex(-75%);
+}
+
+.slider-landing_page_element_text {
+    background-color: rgba(255, 255, 255, 0.1);
+    max-width: 881px;
+
+    
+    padding: 16px 24px;
+
+    gap: 8px;
+
+    text-align:left;
+}
+
+.slider-landing_page_element_text h2 {
+    font-family: var(--texts);
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    line-height: 1;
+}
+
+.slider-landing_page_element_text p {
+    font-family: var(--texts);
+    font-size: 28px;
+    color: white;
+    line-height: 1.1;
+}
+
+.slider-link {
+    display: block;
+    flex: 0 0 25%;
+    width: 25%;
+    height: 100%;
+    text-decoration: none;
+}
+
+
 /** FAQ **/
 
 .FAQ-section {
