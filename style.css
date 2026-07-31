@@ -127,6 +127,11 @@ h3 {
     gap: 16px;
 }
 
+.yt-logo {
+height: 44px; 
+width: 44px;;
+}
+
 /**MAIN**/
 /**Hero-section**/
 .hero {

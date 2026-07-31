@@ -118,10 +118,13 @@ h1 {
 
 /* Video Container (Kompakt) */
 .video-container {
-    max-width: 800px;    /* Das Video bleibt kompakt und scharf */
+    max-width: 800px;
+    /* Das Video bleibt kompakt und scharf */
     width: 100%;
-    margin: 30px auto;   /* Zentriert das Video auf der Seite */
+    margin: 20px auto 10px auto;
+    /* Zentriert das Video auf der Seite */
     padding: 0 15px;
+    padding-top: 80px;
 }
 
 .responsive-video {
@@ -135,31 +138,24 @@ h1 {
 
 /* Youtube link */
 .video-link-text {
-    text-align: center;  /* Zentriert den YouTube-Alternativlink */
-    margin-bottom: 40px;
-    font-family: Arial, sans-serif;
+    text-align: center;
+    /* Zentriert den YouTube-Alternativlink */
+    margin-bottom: 10px;
+    font-family: var(--texts);
 }
 
 /* NEU: Text (Breiter angelegt) */
-.text-content-wide {
-    max-width: 1920px;   /* Wie weit soll der Text auseinandergezogen werden? */
-    width: 100%;
-    margin: 0 auto;      /* Zentriert den gesamten Textblock auf dem Bildschirm */
-    padding: 0 20px;     /* Abstand zum Bildschirmrand bei Smartphones */
-   font-family: var(--texts);
-   font-size: 24px;
-    line-height: 120%;    /* Erhöht die Lesbarkeit bei breiten Texten */
-    text-align: left;    /* Der Fließtext selbst bleibt linksbündig */
-}
 
 /* Styling für die  Liste im Textbereich */
 .text-content-wide ul {
-    margin-left: 20px;   /* Schiebt die Zahlen etwas ein, damit es sauber aussieht */
+    margin-left: 20px;
+    /* Schiebt die Zahlen etwas ein, damit es sauber aussieht */
     margin-top: 15px;
 }
 
 .text-content-wide li {
-    margin-bottom: 10px; /* Abstand zwischen den einzelnen Listenpunkten */
+    margin-bottom: 10px;
+    /* Abstand zwischen den einzelnen Listenpunkten */
 }
 
 
@@ -236,7 +232,7 @@ h1 {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
