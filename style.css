@@ -89,6 +89,19 @@ footer a {
 }
 
 /** Headlines **/
+h1 {
+    color: var(--alternative-color);
+    font-family: var(--headlines);
+    font-size: 64px;
+    font-weight: 700 bold;
+    line-height: 1.2;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 40px;
+    font-weight: 600;
+}
 
 h3 {
     font-family: var(--headlines);
