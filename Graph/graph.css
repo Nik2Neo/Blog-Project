@@ -1,5 +1,7 @@
 /**General**/
-*{margin: 0;}
+* {
+    margin: 0;
+}
 
 main {
     height: 100%;
@@ -83,7 +85,7 @@ h1 {
 
     padding: 16px;
     gap: 16px;
-    
+
     background-color: var(--primary-color);
     border-radius: 30px;
 }
@@ -157,7 +159,8 @@ h1 {
     min-height: 140px;
 }
 
-.informations-section-left, .informations-section-right {
+.informations-section-left,
+.informations-section-right {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -198,9 +201,3 @@ h1 {
     bottom: 60px;
     right: 310px;
 }
-
-
-
-
-
-
