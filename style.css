@@ -102,7 +102,7 @@ h1 {
 
 h2 {
     color: var(--primary-color);
-    font-size: 40px;
+    font-size: 52px;
     font-weight: 600;
     font-family: var(--headlines);
 }
@@ -565,6 +565,7 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 56px;
+    padding-bottom: 120px;
 }
 
 .contact {
@@ -572,6 +573,13 @@ h3 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
 }
 
 .contact p {
@@ -587,4 +595,100 @@ h3 {
     align-items: center;
     justify-content: center;
     gap: 8px;
+}
+
+.contact-form-send {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.privacy-policy-check {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+
+    color: #54370D;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--texts);
+}
+
+.privacy-policy-check a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+
+/** Input **/
+
+input {
+    border: none;
+    border-bottom: 2px solid #54370D;
+    outline: none;
+    padding: 8px 0;
+}
+
+.input-top {
+    width: 575px;
+}
+
+.input-bottom {
+    width: 1200px;
+}
+
+.input-p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+    font-family: var(--texts);
+}
+
+.contact-form-inputs {    
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    gap: 64px;
+}
+
+.contact-form-inputs-top {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-form-inputs-top-left {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 17px;
+}
+
+.contact-form-inputs-top-right {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 17px;
+}
+
+.contact-form-inputs-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+/** Buttons **/
+
+.contact-form-send-button{
+    width: 140px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: white;
+    font-family: var(--headlines);
+    font-size: 24px;
+    font-weight: 700;
+    color: #737373;
+    border: 2px solid #737373;
 }
