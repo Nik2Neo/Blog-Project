@@ -280,25 +280,25 @@ pointer-events: auto;
 
 }
 .element_one {
-    background-image: url(/img/carousel-5.jpg);
+    background-image: url(img/carousel-5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .element_two {
-    background-image: url(/img/copenhagen.jpg);
+    background-image: url(img/copenhagen.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .element_three {
-    background-image: url(/img/pattaya.jpeg);
+    background-image: url(img/pattaya.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .element_four {
-    background-image: url(/img/mount_fuji.jpg);
+    background-image: url(img/mount_fuji.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
