@@ -169,11 +169,9 @@ h1 {
 .share-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
 
-    gap: 48px;
     padding-top: 80px;
 }
 
@@ -182,6 +180,23 @@ h1 {
     font-family: var(--headlines);
     font-size: 24px;
     line-height: 1.2;
+    margin: 0 0 24px;
+}
+
+.share-button-area {
+    position: relative;
+    width: 360px;
+    height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.share-arrow {
+    position: absolute;
+    bottom: 60px;
+    right: 310px;
 }
 
 
