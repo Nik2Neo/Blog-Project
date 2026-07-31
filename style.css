@@ -104,6 +104,7 @@ h2 {
     color: var(--primary-color);
     font-size: 40px;
     font-weight: 600;
+    font-family: var(--headlines);
 }
 
 h3 {
@@ -175,4 +176,85 @@ h3 {
     position: absolute;
     top: 55%;
     left: 30%;
+}
+
+/** FAQ **/
+
+.FAQ-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
+.FAQ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.FAQ h2 {
+    font-size: 52px;
+    height: fit-content;
+}
+
+.FAQ img {
+    padding-bottom: 5px;
+}
+
+.FAQ-questions {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 32px;
+}
+
+.questions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    font-family: var(--texts);
+    color: #54370D;
+    background-color: var(--secondary-color);
+    
+    width: 1200px;
+    padding: 16px 14px;
+    border-radius: 12px;
+}
+
+/** Contact **/
+
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact p {
+    color: #54370D;
+    font-size: 24px;
+    font-family: var(--texts);
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.contact-headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }

@@ -133,9 +133,9 @@ h1 {
     object-fit: cover;
     box-shadow: -9px 5px 20px 0px #00000040;
     border-radius: 16px;
-    transform: rotateX(15deg) rotateY(15deg);
     z-index: 1;
-    gap: 32px;
+    gap: 32px;    
+    transform: rotateX(15deg) rotateY(330deg);
 }
 
 .carousel-1 {
