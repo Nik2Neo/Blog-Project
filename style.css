@@ -63,12 +63,16 @@ nav ul a {
 }
 
 main {    
-    height: 128px;
     flex: 1;
+}
+
+main p {
+    color: #54370D;
 }
 
 section {
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 footer {
@@ -121,4 +125,55 @@ h3 {
     display: flex;
     align-items: center;
     gap: 16px;
+}
+
+/**MAIN**/
+/**Hero-section**/
+.hero {
+    display: flex;
+    width: 100%;
+    position: relative;
+
+    background-image: url(/img/landing-page_hero\ photo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hero-section-yellow {
+    position: relative;
+    width: 45%;
+}
+
+.hero-section-yellow > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.hero-section-text {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+
+    max-width: 280px;
+    z-index: 2;
+}
+
+.hero-section-text>h3 {
+    font-size: 60px;
+}
+
+.hero-section-text>p {
+    font-family: var(--texts);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.hero-section-circle {
+    position: absolute;
+    top: 55%;
+    left: 30%;
 }
