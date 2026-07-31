@@ -139,7 +139,7 @@ width: 44px;;
     width: 100%;
     position: relative;
 
-    background-image: url(/img/landing-page_hero\ photo.png);
+    background-image: url(img/landing-page_hero\ photo.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
