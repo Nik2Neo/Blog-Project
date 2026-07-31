@@ -259,6 +259,7 @@ width: 44px;;
     height: 100%;
 
     transition: all 1s ease-in-out;
+    cursor: pointer;
 }
 
 .slider-landing_page_element {
@@ -270,8 +271,14 @@ width: 44px;;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    pointer-events: none;
 }
 
+.slider-landing_page_element_text {
+pointer-events: auto;
+
+}
 .element_one {
     background-image: url(/img/carousel-5.jpg);
     background-repeat: no-repeat;
