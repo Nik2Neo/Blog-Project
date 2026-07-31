@@ -173,6 +173,8 @@ h1 {
     height: 500px;
     max-width: 1300px;
     align-items: center;
+    justify-content: center;
+    left: 10%;
 }
 
 /** Carousel-Texts **/
@@ -193,10 +195,11 @@ h1 {
 
 .pro-tipps-section {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-self: center;
 
-    padding-top: 80px;
+    margin-top: 80px;
     font-size: 24px;
     font-weight: 400;
     line-height: 120%;
@@ -216,4 +219,68 @@ h1 {
 .pro-tipps-section-link {
     color: var(--primary-color);
     font-weight: bold;
+}
+
+.pro-tipps-section-lightbulb {
+    transform: rotate(12deg);
+}
+
+.pro-tipp-frame {
+    display: flex;
+    position: absolute;
+    width: fit-content;
+    transform: rotate(-15deg);
+    bottom: 120px;
+    left: -50px;
+    gap: 8px;
+
+    padding: 8px;
+    border-radius: 10px;
+
+    background-color: var(--primary-color);
+    color: var(--alternative-color);
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 120%;
+    text-align: center;
+}
+
+/**share-section**/
+.share-section {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+
+    padding-top: 80px;
+}
+
+.share-section p {
+    max-width: 493px;
+    font-family: var(--headlines);
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 0 0 24px;
+    font-weight: bold;
+}
+
+.share-button-area {
+    position: relative;
+    width: 360px;
+    height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.share-arrow {
+    position: absolute;
+    bottom: 60px;
+    right: 310px;
 }
