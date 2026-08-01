@@ -4,6 +4,7 @@
     margin: 0;
 }
 
+
 main {
     height: 100%;
     font-family: var(--texts);
@@ -28,6 +29,7 @@ h1 {
     font-weight: 700 bold;
     line-height: 1.2;
 }
+
 
 
 /**Intro-Top**/
@@ -81,9 +83,11 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    ;
 
-    width: 272px;
+    max-width: 1080px;
+    min-width: 272px;
+
+    width: 100%;
 
     padding: 16px;
     gap: 16px;
@@ -146,7 +150,7 @@ h1 {
 
 /* NEU: Text (Breiter angelegt) */
 
-/* Styling für die  Liste im Textbereich */ 
+/* Styling für die  Liste im Textbereich */
 .text-content-wide ul {
     margin-left: 20px;
     /* Schiebt die Zahlen etwas ein, damit es sauber aussieht */
@@ -265,4 +269,171 @@ h1 {
     position: absolute;
     bottom: 60px;
     right: 310px;
+}
+
+/**Intro-Top-Left**/
+
+
+@media (max-width: 1024px) {
+
+    /* 1. MAIN ANPASSEN */
+    main {
+        padding: 40px 20px;
+        /* Weniger Abstand links/rechts, damit der Inhalt Platz hat */
+        height: auto;
+        /* Hebt die starre 100%-Höhe auf, falls der Text länger wird */
+    }
+
+    .intro-top {
+        flex-wrap: wrap;
+    }
+
+    .intro-left {
+
+        min-width: 300px;
+
+    }
+
+    /* 2. ÜBERSCHRIFTEN COMPACT MACHEN */
+    h2 {
+        font-size: 18px;
+        /* Vorher 40px - viel zu groß für Tablets */
+        line-height: 1.3;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+        /* Damit die Überschrift nicht aus dem Bildschirm läuft */
+    }
+
+    h1 {
+        font-size: 32px;
+        /* Vorher 64px - bricht sonst unschön um */
+        line-height: 1.2;
+        font-weight: 700;
+        /* Das falsche Wort "bold" hier korrigiert */
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        /* Damit die Überschrift nicht aus dem Bildschirm läuft */
+    }
+
+    .intro-left p {
+        font-size: 18px;
+        /* Vorher 28px - kompakter für kleinere Bildschirme */
+        line-height: 1.4;
+        flex-wrap: wrap;
+        /* Damit der Text nicht aus dem Bildschirm läuft */
+    }
+
+        /* Die Sektion dient als stabiler Ankerpunkt */
+    .pro-tipps-section {
+        position: relative;
+        margin-top: 60px; /* Mehr Platz nach oben, da das Schild nun dort sitzt */
+        padding-top: 40px;
+    }
+
+    /* Das Schild wird exakt mittig über der Box platziert */
+    .pro-tipp-frame {
+        position: absolute;
+        top: -20px;           /* Schiebt das Schild halb über den oberen Rand der Box */
+        left: 50%;            /* Setzt den Startpunkt genau in die Mitte der Seite */
+        right: auto;          /* Hebt vorherige Rechts-Ausrichtungen auf */
+        bottom: auto;         /* Hebt vorherige Unten-Ausrichtungen auf */
+        
+        /* Der Trick für perfekte Zentrierung + eine ganz leichte, stilvolle Drehung */
+        transform: translateX(-50%) ; 
+        
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    /* Die eigentliche Tipp-Box darunter */
+    .pro-tipps-section-box ol {
+        padding: 24px;        /* Gleichmäßiger Abstand auf allen Seiten */
+    }
+
+    /** Images **/
+
+}
+
+
+@media (max-width: 768px) {
+
+    /* 1. MAIN ANPASSEN */
+    main {
+        padding: 40px 20px;
+        /* Weniger Abstand links/rechts, damit der Inhalt Platz hat */
+        height: auto;
+        /* Hebt die starre 100%-Höhe auf, falls der Text länger wird */
+    }
+
+    /* 2. ÜBERSCHRIFTEN COMPACT MACHEN */
+    h2 {
+        font-size: 18px;
+        /* Vorher 40px - viel zu groß für Tablets */
+        line-height: 1.3;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+        /* Damit die Überschrift nicht aus dem Bildschirm läuft */
+    }
+
+    h1 {
+        font-size: 32px;
+        /* Vorher 64px - bricht sonst unschön um */
+        line-height: 1.2;
+        font-weight: 700;
+        /* Das falsche Wort "bold" hier korrigiert */
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        /* Damit die Überschrift nicht aus dem Bildschirm läuft */
+    }
+
+    .intro-left p {
+        font-size: 18px;
+        /* Vorher 28px - kompakter für kleinere Bildschirme */
+        line-height: 1.4;
+        flex-wrap: wrap;
+        /* Damit der Text nicht aus dem Bildschirm läuft */
+    }
+
+    
+}
+
+
+@media (max-width: 300px) {
+
+    /* 1. MAIN ANPASSEN */
+    main {
+        padding: 20px 10px;
+        /* Weniger Abstand links/rechts, damit der Inhalt Platz hat */
+        height: auto;
+        /* Hebt die starre 100%-Höhe auf, falls der Text länger wird */
+    }
+
+    /* 2. ÜBERSCHRIFTEN COMPACT MACHEN */
+    h2 {
+        font-size: 12px;
+        /* Vorher 40px - viel zu groß für Tablets */
+        line-height: 0.9;
+        margin-bottom: 5px;
+        flex-wrap: wrap;
+        /* Damit die Überschrift nicht aus dem Bildschirm läuft */
+    }
+
+    h1 {
+        font-size: 18px;
+        /* Vorher 64px - bricht sonst unschön um */
+        line-height: 1.2;
+        font-weight: 700;
+        /* Das falsche Wort "bold" hier korrigiert */
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        /* Damit die Überschrift nicht aus dem Bildschirm läuft */
+    }
+
+    .intro-left p {
+        font-size: 12px;
+        /* Vorher 28px - kompakter für kleinere Bildschirme */
+        line-height: 1.1;
+        flex-wrap: wrap;
+        /* Damit der Text nicht aus dem Bildschirm läuft */
+    }
 }
