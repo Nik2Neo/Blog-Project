@@ -163,7 +163,7 @@ h3 {
     width: 45%;
 }
 
-.hero-section-yellow>img {
+.hero-Vector {
     display: block;
     width: 100%;
     height: 100%;
@@ -194,7 +194,14 @@ h3 {
 .hero-section-circle {
     position: absolute;
     top: 55%;
-    left: 30%;
+    right: 0;
+    transform: translateX(-35%);
+    
+
+    width: 140px;
+    height: auto;
+
+    z-index: 3;
 }
 
 /**Slider-Section**/
@@ -583,7 +590,7 @@ input {
     .hero-section-circle {
         width: 120px;      /* Skaliert den dekorativen Kreis mit */
         height: auto;
-        left: 32%;
+        transform: translateX(-25%);
     }
 
     .p {
@@ -630,11 +637,11 @@ input {
 
     .hero-section-yellow {
         width: 55%; 
-                display: flex;
+        display: flex;
         align-items: center; /* Zentriert den Inhalt vertikal im gelben Bereich */
     }
 
-    .hero-section-yellow > img {
+    .hero-Vector {
         object-fit: cover; /* Verhindert, dass sich die gelbe Grafik verzerrt */
         height: 100%; /* Stellt sicher, dass das Bild die volle Höhe des Containers einnimmt */
     }
@@ -657,8 +664,7 @@ input {
 
     .hero-section-circle {
         width: 75px;
-        left: 35%;
-        top: 60%;
+        transform: translateX(-50%);
     }
 
        footer {
