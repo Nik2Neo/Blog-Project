@@ -4,14 +4,12 @@
 }
 
 main {
-    height: 100%;
-    font-family: var(--texts);
-    padding: 80px 32px;
-}
-
-.intro-section {
+    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+
+    font-family: var(--texts);
+    padding: 80px 32px;
 }
 
 /**Intro-Top**/
@@ -104,13 +102,12 @@ main {
     align-items: center;
 
     padding-top: 80px;
-
-    max-width: 1440px;
-    margin: 0 auto;
 }
 
 .weather-section img {
-    width: 640px;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
 }
 
 .weather-section p {
@@ -123,10 +120,7 @@ main {
 .informations-section {
     display: flex;
     flex-direction: column;
-    
-    margin: 0 auto;
 
-    max-width: 1440px;
     padding-top: 80px;
     gap: 88px;
 
@@ -154,16 +148,16 @@ main {
 
 .informations-section-left img,
 .informations-section-right img {
-    
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     margin-top: auto;
 }
 
 /**share-section**/
 .share-section {
     width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,4 +189,20 @@ main {
     position: absolute;
     bottom: 60px;
     right: 310px;
+}
+
+/**Responsivnes**/
+
+@media (max-width: 1279px) {
+    main {
+        padding: 64px 24px;
+    }
+
+    .informations-section {
+        justify-content: center;
+    }
+
+    .informations-section-top h3{
+        text-align: center;
+    }
 }
