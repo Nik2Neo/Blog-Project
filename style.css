@@ -44,9 +44,7 @@ header {
     padding-left: 146px;
     font-family: var(--headlines);
     font-size: 24px;
-    justify-content: center;
-
-}
+    }
 
 .header-logo {
     height: 72px;
@@ -548,7 +546,7 @@ input {
         height: auto;
         padding: 24px 20px;
         gap: 16px;
-        justify-content: center;
+        justify-content: center !important;
         align-items: center;
     }
 
