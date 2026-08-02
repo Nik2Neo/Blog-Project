@@ -7,19 +7,19 @@
 }
 
 @font-face {
-    font-display: swap; 
+    font-display: swap;
     font-family: 'Arima';
     font-style: normal;
     font-weight: 400;
-    src: url(fonts/Arima/Arima-VariableFont_wght.ttf) format('woff2'); 
+    src: url(fonts/Arima/Arima-VariableFont_wght.ttf) format('woff2');
 }
 
 @font-face {
-    font-display: swap; 
+    font-display: swap;
     font-family: 'Palanquin';
     font-style: normal;
     font-weight: 400;
-    src: url(fonts/Arima/Palanquin/Palanquin-Regular.ttf) format('woff2'); 
+    src: url(fonts/Arima/Palanquin/Palanquin-Regular.ttf) format('woff2');
 }
 
 /** General **/
@@ -44,17 +44,23 @@ header {
     padding-left: 146px;
     font-family: var(--headlines);
     font-size: 24px;
+    justify-content: center;
+
 }
 
-header img {
+.header-logo {
     height: 72px;
     width: 72px;
+    object-fit: contain;
+    /* Sorgt dafür, dass das Logo nicht verzerrt */
 }
+
 
 nav ul {
     display: flex;
     list-style-type: none;
     gap: 72px;
+    justify-content: center;
 }
 
 nav ul a {
@@ -62,7 +68,7 @@ nav ul a {
     text-decoration: none;
 }
 
-main {    
+main {
     flex: 1;
 }
 
@@ -128,8 +134,9 @@ h3 {
 }
 
 .yt-logo {
-height: 44px; 
-width: 44px;;
+    height: 44px;
+    width: 44px;
+    ;
 }
 
 /**MAIN**/
@@ -149,7 +156,7 @@ width: 44px;;
     width: 45%;
 }
 
-.hero-section-yellow > img {
+.hero-section-yellow>img {
     display: block;
     width: 100%;
     height: 100%;
@@ -228,9 +235,9 @@ width: 44px;;
 
 .slider-landing_page {
     position: relative;
-    
+
     background-color: black;
-    
+
     width: 1200px;
     height: 533px;
 
@@ -249,7 +256,7 @@ width: 44px;;
 
 .slider-landing_page_wrapper {
     z-index: 1;
-    
+
     position: absolute;
     top: 0;
     left: 0;
@@ -316,12 +323,12 @@ width: 44px;;
     background-color: rgba(255, 255, 255, 0.1);
     max-width: 881px;
 
-    
+
     padding: 16px 24px;
 
     gap: 8px;
 
-    text-align:left;
+    text-align: left;
 }
 
 .slider-landing_page_element_text h2 {
@@ -379,7 +386,7 @@ width: 44px;;
 .FAQ-questions {
     display: flex;
     flex-direction: column;
-    
+
     gap: 32px;
 }
 
@@ -393,7 +400,7 @@ width: 44px;;
     font-family: var(--texts);
     color: #54370D;
     background-color: var(--secondary-color);
-    
+
     width: 1200px;
     padding: 16px 14px;
     border-radius: 12px;
@@ -401,7 +408,7 @@ width: 44px;;
 
 /** Contact **/
 
-.contact-section{
+.contact-section {
     display: flex;
     flex-direction: column;
     gap: 56px;
@@ -487,7 +494,7 @@ input {
     font-family: var(--texts);
 }
 
-.contact-form-inputs {    
+.contact-form-inputs {
     display: flex;
     flex-direction: column;
     width: 1200px;
@@ -521,7 +528,7 @@ input {
 
 /** Buttons **/
 
-.contact-form-send-button{
+.contact-form-send-button {
     width: 140px;
     height: 50px;
     border-radius: 40px;
@@ -531,4 +538,38 @@ input {
     font-weight: 700;
     color: #737373;
     border: 2px solid #737373;
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 24px 20px;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Hier steuern wir das Logo über deine neue Klasse an */
+    .header-logo {
+        height: 60px;
+        /* Auf Handys leicht kompakter */
+        width: 60px;
+    }
+
+    header nav ul {
+        gap: 24px;
+        padding: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .yt-logo {
+        height: 22px;
+        width: 22px;
+        ;
+    }
 }

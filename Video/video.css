@@ -351,6 +351,7 @@ h1 {
     }
 
     /** Images **/
+   
 
 }
 
@@ -394,7 +395,29 @@ h1 {
         /* Damit der Text nicht aus dem Bildschirm läuft */
     }
 
+     footer {
+        flex-direction: column;    /* Elemente untereinander statt nebeneinander */
+        height: auto;              /* Hebt die starre Höhe von 128px auf */
+        padding: 40px 20px;        /* Schafft Platz nach oben und unten */
+        gap: 24px;                 /* Abstand zwischen Text-Links und Icons */
+        text-align: center;
+    }
+
+  
+    .socials {
+        display: grid;
+        grid-template-columns: repeat(2, 44px); /* 2 Spalten, genau so breit wie deine Icons */
+        gap: 16px;
+        justify-content: center;   /* Zentriert das quadratische Grid im Footer */
+    }
     
+    .social-icon {
+        width: 18px;               /* Einheitliche Größe für alle 3 Icons */
+        height: 18px;
+        object-fit: contain;
+    }
+
+     
 }
 
 
@@ -435,5 +458,53 @@ h1 {
         line-height: 1.1;
         flex-wrap: wrap;
         /* Damit der Text nicht aus dem Bildschirm läuft */
+    }
+
+    
+     footer {
+        flex-direction: column;    /* Elemente untereinander statt nebeneinander */
+        height: auto;              /* Hebt die starre Höhe von 128px auf */
+        padding: 20px 10px;        /* Schafft Platz nach oben und unten */
+        gap: 12px;                 /* Abstand zwischen Text-Links und Icons */
+        text-align: center;
+    }
+
+    nav ul {
+        gap: 12px;                 /* Weniger Abstand zwischen den Navigationslinks */
+    }
+
+  
+    .socials {
+        display: grid;
+        grid-template-columns: repeat(2, 44px); /* 2 Spalten, genau so breit wie deine Icons */
+        gap: 16px;
+        justify-content: center;   /* Zentriert das quadratische Grid im Footer */
+    }
+    
+    .social-icon {
+        width: 18px;               /* Einheitliche Größe für alle 3 Icons */
+        height: 18px;
+        object-fit: contain;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .intro-icons {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr); /* Teilt den Platz in 2 gleich große Spalten */
+        gap: 16px 20px; /* 16px Abstand nach unten, 20px nach rechts */
+        justify-content: center;
+        width: 100%;
+    }
+
+    .intro-icons-item {
+        display: flex;
+        flex-direction: row; /* Icon und Text bleiben sauber nebeneinander */
+        align-items: center;
+        gap: 8px;
+        font-size: 14px; /* Leicht kleinere Schrift, damit es perfekt passt */
+        white-space: nowrap; /* Verhindert, dass Wörter wie "min." alleine in der Zeile stehen */
     }
 }
