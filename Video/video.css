@@ -84,11 +84,7 @@ h1 {
     align-items: center;
     justify-content: center;
 
-    max-width: 1080px;
-    min-width: 272px;
-
-    width: 100%;
-
+    width: 272px;
     padding: 16px;
     gap: 16px;
 
@@ -273,6 +269,20 @@ h1 {
 
 /**Intro-Top-Left**/
 
+@media (max-width: 1300px) {
+
+ .intro-right {
+        width: 100%;
+          max-width: 1080px;
+        min-width: 272px;
+
+        /* Damit die Box nicht zu groß wird */
+        margin: 0 auto;
+        /* Zentriert die Box auf kleineren Bildschirmen */
+    
+    
+    }
+    }
 
 @media (max-width: 1024px) {
 
@@ -305,7 +315,7 @@ h1 {
     }
 
     h1 {
-        font-size: 32px;
+        font-size: 28px;
         /* Vorher 64px - bricht sonst unschön um */
         line-height: 1.2;
         font-weight: 700;
@@ -322,12 +332,16 @@ h1 {
         flex-wrap: wrap;
         /* Damit der Text nicht aus dem Bildschirm läuft */
     }
+    .intro-right {
+        width: 100%;
+          max-width: 1080px;
+        min-width: 272px;
 
-        /* Die Sektion dient als stabiler Ankerpunkt */
-    .pro-tipps-section {
-        position: relative;
-        margin-top: 60px; /* Mehr Platz nach oben, da das Schild nun dort sitzt */
-        padding-top: 40px;
+        /* Damit die Box nicht zu groß wird */
+        margin: 0 auto;
+        /* Zentriert die Box auf kleineren Bildschirmen */
+    
+    
     }
 
     /* Das Schild wird exakt mittig über der Box platziert */
@@ -417,11 +431,15 @@ h1 {
         object-fit: contain;
     }
 
+    .p {
+        font-size: 16px;
+        line-height: 1.2;
+    }
      
 }
 
 
-@media (max-width: 300px) {
+@media (max-width: 480px) {
 
     /* 1. MAIN ANPASSEN */
     main {
@@ -433,7 +451,7 @@ h1 {
 
     /* 2. ÜBERSCHRIFTEN COMPACT MACHEN */
     h2 {
-        font-size: 12px;
+        font-size: 10px;
         /* Vorher 40px - viel zu groß für Tablets */
         line-height: 0.9;
         margin-bottom: 5px;
@@ -442,7 +460,7 @@ h1 {
     }
 
     h1 {
-        font-size: 18px;
+        font-size: 14px;
         /* Vorher 64px - bricht sonst unschön um */
         line-height: 1.2;
         font-weight: 700;
@@ -453,7 +471,7 @@ h1 {
     }
 
     .intro-left p {
-        font-size: 12px;
+        font-size: 18px;
         /* Vorher 28px - kompakter für kleinere Bildschirme */
         line-height: 1.1;
         flex-wrap: wrap;
@@ -487,10 +505,6 @@ h1 {
         object-fit: contain;
     }
 
-}
-
-@media (max-width: 480px) {
-
     .intro-icons {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr); /* Teilt den Platz in 2 gleich große Spalten */
@@ -506,5 +520,10 @@ h1 {
         gap: 8px;
         font-size: 14px; /* Leicht kleinere Schrift, damit es perfekt passt */
         white-space: nowrap; /* Verhindert, dass Wörter wie "min." alleine in der Zeile stehen */
+    }
+
+    .p {
+        font-size: 8px;
+        line-height: 0.8;
     }
 }

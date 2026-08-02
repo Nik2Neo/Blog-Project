@@ -44,6 +44,7 @@ header {
     padding-left: 146px;
     font-family: var(--headlines);
     font-size: 24px;
+    max-width: 1440px;
     }
 
 .header-logo {
