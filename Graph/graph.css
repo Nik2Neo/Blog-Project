@@ -123,14 +123,15 @@ main {
 .informations-section {
     display: flex;
     flex-direction: column;
-    max-width: 1440px;
+    
     margin: 0 auto;
-    font-size: 24px;
 
+    max-width: 1440px;
     padding-top: 80px;
-    line-height: 1.2;
-
     gap: 88px;
+
+    font-size: 24px;
+    line-height: 1.2;
 }
 
 .informations-section-top {
@@ -149,6 +150,12 @@ main {
     align-items: center;
     flex: 1;
     gap: 24px;
+}
+
+.informations-section-left img,
+.informations-section-right img {
+    
+    margin-top: auto;
 }
 
 /**share-section**/

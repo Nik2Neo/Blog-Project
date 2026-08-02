@@ -139,35 +139,6 @@ h1 {
     transform: rotateX(15deg) rotateY(330deg);
 }
 
-.carousel-1 {
-    position: absolute;
-    left: 0;
-}
-
-.carousel-2 {
-    position: absolute;
-    z-index: 2;
-    left: 200px;
-}
-
-.carousel-3 {
-    position: absolute;
-    z-index: 3;
-    left: 400px;
-}
-
-.carousel-4 {
-    position: absolute;
-    z-index: 4;
-    left: 600px;
-}
-
-.carousel-5 {
-    position: absolute;
-    z-index: 5;
-    left: 800px;
-}
-
 .carousel-slide {
     height: 440px;
     display: flex;
@@ -321,6 +292,15 @@ h1 {
 
 
 @media (max-width: 768px) {
+
+    /** General **/
+
+    main {
+    padding: 24px 15px;
+    }
+
+    /**Intro-Top**/
+
     .intro-top {
         flex-direction: column;
     }
@@ -328,4 +308,24 @@ h1 {
     .intro-icons {
         flex-wrap: wrap;
     }
+
+    .intro-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .intro-left p {
+        font-size: 18px;
+    }
+
+    /**Carousel**/
+
+    .carousel-slide {
+        height: 293px;
+    }
+
+    .carousel-element {
+        width: 200px;
+    }
+    
 }
