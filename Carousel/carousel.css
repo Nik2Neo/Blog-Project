@@ -315,3 +315,17 @@ h1 {
     bottom: 60px;
     right: 310px;
 }
+
+
+/** Responsiveness **/
+
+
+@media (max-width: 768px) {
+    .intro-top {
+        flex-direction: column;
+    }
+
+    .intro-icons {
+        flex-wrap: wrap;
+    }
+}
