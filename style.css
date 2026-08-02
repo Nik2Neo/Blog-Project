@@ -46,7 +46,7 @@ header {
     }
 
 .header-content {
-    max-width: 1080px;
+   
     height: 128px;
 
     margin: 0 auto;
@@ -245,8 +245,11 @@ h3 {
 
     background-color: black;
 
-    width: 1200px;
-    height: 533px;
+    max-width: 1200px;
+    min-height: 533px;
+
+    width: 100%;
+    height: 100%;
 
     display: flex;
     justify-content: center;
@@ -408,7 +411,8 @@ h3 {
     color: #54370D;
     background-color: var(--secondary-color);
 
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     padding: 16px 14px;
     border-radius: 12px;
 }
@@ -420,6 +424,7 @@ h3 {
     flex-direction: column;
     gap: 56px;
     padding-bottom: 120px;
+    
 }
 
 .contact {
@@ -488,11 +493,12 @@ input {
 
 .input-top {
     width: 575px;
+   
 }
 
 .input-bottom {
     width: 1200px;
-}
+    }
 
 .input-p {
     font-size: 24px;
@@ -548,46 +554,165 @@ input {
 }
 
 
+@media (max-width: 1024px) {
+
+    main {
+        padding: 40px 20px;
+        /* Weniger Abstand links/rechts, damit der Inhalt Platz hat */
+        height: auto;
+        /* Hebt die starre 100%-Höhe auf, falls der Text länger wird */
+    }
+
+    /* ==========================================
+       HERO-SECTION VERKLEINERN (Tablet)
+       ========================================== */
+    .hero-section-text {
+        max-width: 220px; /* Schmaler, damit es im Vektor bleibt */
+        left: 10%;        /* Leicht nach links gerückt für mehr Platz */
+    }
+
+    .hero-section-text > h3 {
+        font-size: 48px;  /* Von 60px herunterskaliert */
+    }
+
+    .hero-section-text > p {
+        font-size: 24px;  /* Von 28px herunterskaliert */
+        line-height: 1.2;
+    }
+
+    .hero-section-circle {
+        width: 120px;      /* Skaliert den dekorativen Kreis mit */
+        height: auto;
+        left: 32%;
+    }
+
+    .p {
+        font-size: 20px;  /* Leicht kleinere Schriftgröße für Tablets */
+        line-height: 1.4; /* Etwas mehr Zeilenhöhe für bessere Lesbarkeit */
+        justify-content: center; /* Zentriert den Text auf Tablets */
+            }
+
+        .slider-section-text {
+        font-size: 20px;  /* Leicht kleinere Schriftgröße für Tablets */  
+        justify-content: center; /* Zentriert den Text auf Tablets */  
+         }
+
+         .slider-Landing_page{
+        
+        justify-content: center; /* Zentriert den Text auf Tablets */  
+         }
+
+    .FAQ {
+        font-size: 48px;  /* Leicht kleinere Überschrift für Tablets */
+    }
+}
+
 
 
 @media (max-width: 768px) {
 
-    header {
-        flex-direction: column;
+    main {
+        padding: 40px 20px;
+        /* Weniger Abstand links/rechts, damit der Inhalt Platz hat */
         height: auto;
-        padding: 24px 20px;
-        gap: 16px;
-        justify-content: center !important;
-        align-items: center;
+        /* Hebt die starre 100%-Höhe auf, falls der Text länger wird */
     }
 
-      .header-content {
-        flex-direction: column;   /* Elemente untereinander anordnen */
-        height: auto;             /* Löscht starre 128px Höhe */
-        padding: 24px 16px;       /* Flexibler Innenabstand statt starre Werte */
-        gap: 16px;
-        justify-content: center;
-        align-items: center;      /* Perfekte Zentrierung von Logo und Links */
+    /* ==========================================
+       HERO-SECTION OPTIMIERUNG
+       ========================================== */
+    .hero {
+        display: block; /* Stellt sicher, dass die Sektion auf Handys korrekt angezeigt wird */
+        background-size: cover; /* Füllt jetzt den gesamten rechten Bereich aus (kein weißer Rand mehr!) */
+        background-position: center right; /* Richtet das Foto optimal aus */
+        min-height: 250px; /* Gibt der Sektion eine stabile Höhe auf Handys */
     }
 
-    /* Hier steuern wir das Logo über deine neue Klasse an */
-    .header-logo {
-        height: 60px;
-        /* Auf Handys leicht kompakter */
-        width: 60px;
+    .hero-section-yellow {
+        width: 55%; 
+                display: flex;
+        align-items: center; /* Zentriert den Inhalt vertikal im gelben Bereich */
     }
 
-    header nav ul {
-        gap: 24px;
-        padding: 0;
-        justify-content: space-around;
-        flex-wrap: wrap;
-
+    .hero-section-yellow > img {
+        object-fit: cover; /* Verhindert, dass sich die gelbe Grafik verzerrt */
+        height: 100%; /* Stellt sicher, dass das Bild die volle Höhe des Containers einnimmt */
     }
 
-    .yt-logo {
-        height: 22px;
-        width: 22px;
-        ;
+    .hero-section-text {
+        max-width: 180px;
+        left: 10%;
+        transform: translateY(-50%);
+    }
+
+    .hero-section-text > h3 {
+        font-size: 36px; /* Sauber lesbar */
+        margin-bottom: 8px;
+    }
+
+    .hero-section-text > p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .hero-section-circle {
+        width: 75px;
+        left: 35%;
+        top: 60%;
+    }
+
+       footer {
+        flex-direction: column;    /* Elemente untereinander statt nebeneinander */
+        height: auto;              /* Hebt die starre Höhe von 128px auf */
+        padding: 40px 20px;        /* Schafft Platz nach oben und unten */
+        gap: 24px;                 /* Abstand zwischen Text-Links und Icons */
+        text-align: center;
+    }
+
+  
+    
+    .social-icon {
+        width: 18px;               /* Einheitliche Größe für alle 3 Icons */
+        height: 18px;
+        object-fit: contain;
+    }
+
+  .contact-form-inputs {
+        width: 100% !important; /* Hebt die 1200px auf */
+        max-width: 100%;
+        gap: 32px; /* Verringert den riesigen Abstand zwischen Elementen */
+    }
+
+    .input-top {
+        width: 100% !important; /* Hebt die 575px auf */
+        max-width: 575px;
+    }
+    /* Die obere Reihe (Name / Email) bricht untereinander um */
+    .contact-form-inputs-top {
+        flex-direction: column;
+        gap: 32px;
+        width: 100%;
+    }
+
+    /* Die linken und rechten Spalten nutzen jetzt 100% statt 600px */
+    .contact-form-inputs-top-left,
+    .contact-form-inputs-top-right {
+        width: 100% !important;
+        gap: 12px;
+    }
+
+     .contact-form-inputs-bottom {
+        width: 100% !important; /* Hebt die feste Breite auf */
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .input-bottom {
+        width: 100% !important; /* Zwingt die lange Linie, sich dem Bildschirm anzupassen */
+        max-width: 575px; /* Optional: Begrenzung, damit es nicht zu lang wird */
     }
 }
+
+
