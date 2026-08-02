@@ -422,7 +422,7 @@ h1 {
         display: grid;
         grid-template-columns: repeat(2, 44px); /* 2 Spalten, genau so breit wie deine Icons */
         gap: 16px;
-        justify-content: center;   /* Zentriert das quadratische Grid im Footer */
+        justify-content: space-around;   /* Zentriert das quadratische Grid im Footer */
     }
     
     .social-icon {

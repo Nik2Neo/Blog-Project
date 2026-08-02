@@ -41,10 +41,12 @@ header {
     
     font-family: var(--headlines);
     font-size: 24px;
+    max-width: 1440px;
+    padding: 0px 80px;
     }
 
 .header-content {
-    max-width: 1440px;
+    max-width: 1080px;
     height: 128px;
 
     margin: 0 auto;
@@ -546,6 +548,8 @@ input {
 }
 
 
+
+
 @media (max-width: 768px) {
 
     header {
@@ -555,6 +559,15 @@ input {
         gap: 16px;
         justify-content: center !important;
         align-items: center;
+    }
+
+      .header-content {
+        flex-direction: column;   /* Elemente untereinander anordnen */
+        height: auto;             /* Löscht starre 128px Höhe */
+        padding: 24px 16px;       /* Flexibler Innenabstand statt starre Werte */
+        gap: 16px;
+        justify-content: center;
+        align-items: center;      /* Perfekte Zentrierung von Logo und Links */
     }
 
     /* Hier steuern wir das Logo über deine neue Klasse an */
@@ -567,7 +580,7 @@ input {
     header nav ul {
         gap: 24px;
         padding: 0;
-        justify-content: center;
+        justify-content: space-around;
         flex-wrap: wrap;
 
     }
