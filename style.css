@@ -37,15 +37,22 @@ body {
 }
 
 header {
-    display: flex;
     background-color: var(--primary-color);
-    height: 128px;
-    align-items: center;
-    padding-left: 146px;
+    
     font-family: var(--headlines);
     font-size: 24px;
     max-width: 1440px;
     }
+
+.header-content {
+    max-width: 1440px;
+    height: 128px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
 
 .header-logo {
     height: 72px;
