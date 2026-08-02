@@ -206,3 +206,28 @@ main {
         text-align: center;
     }
 }
+
+@media (max-width: 768px) {
+    main {
+        padding: 48px 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .informations-section-top {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 32px 12px;
+    }
+
+    .share-arrow {
+        left: 10px;
+        width: 70px;
+        height: auto;
+    }
+}
