@@ -554,20 +554,22 @@ input {
 
     header {
         flex-direction: column;
-        height: auto;
-        padding: 24px 20px;
+        height: 75px;
         gap: 16px;
-        justify-content: center !important;
+        justify-content: center;
         align-items: center;
     }
 
       .header-content {
         flex-direction: column;   /* Elemente untereinander anordnen */
-        height: auto;             /* Löscht starre 128px Höhe */
-        padding: 24px 16px;       /* Flexibler Innenabstand statt starre Werte */
+        height: 75px;      /* Flexibler Innenabstand statt starre Werte */
         gap: 16px;
         justify-content: center;
         align-items: center;      /* Perfekte Zentrierung von Logo und Links */
+    }
+
+    .header-content a {
+        display: flex;
     }
 
     /* Hier steuern wir das Logo über deine neue Klasse an */
@@ -577,12 +579,8 @@ input {
         width: 60px;
     }
 
-    header nav ul {
-        gap: 24px;
-        padding: 0;
-        justify-content: space-around;
-        flex-wrap: wrap;
-
+    header nav {
+        display: none;
     }
 
     .yt-logo {
