@@ -1,6 +1,7 @@
 /** General **/
 
 * {
+    box-sizing: border-box;
     margin: 0;
 }
 
@@ -168,13 +169,43 @@ h1 {
 }
 
 .carousel-slide {
-    position: relative;
-    justify-self: center;
-    height: 500px;
-    max-width: 1300px;
-    align-items: center;
+    height: 440px;
+    display: flex;
     justify-content: center;
-    left: 10%;
+    align-items: center;
+    gap: -20px;
+}
+
+.carousel-element {
+    z-index: 1;
+    width: 300px;
+    height: 100%;
+
+    box-shadow: -9px 5px 20px 0px #00000040;
+
+    transform: perspective(600px) rotateY(20deg) translateX(-20px);
+    transform-origin: 50% 50%;
+
+    transition: all 250ms ease-in-out;
+    border-radius: 16px;
+    
+    margin-right: -50px;    
+}
+
+.carousel-element img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.carousel-element:hover {
+    z-index: 2;
+    transform: perspective(250px) rotateY(0deg) translateX(0px) scaleX(1.5) scaleY(1.2);
+}
+
+.carousel-element:hover~.carousel-element {
+    transform: perspective(250px) rotateY(-20deg) translateX(20px);
 }
 
 /** Carousel-Texts **/
