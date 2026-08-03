@@ -321,7 +321,7 @@ h1 {
     .intro-left p {
         font-size: 18px;
     }
-    
+
 
     /** Carousel **/
 
@@ -329,10 +329,90 @@ h1 {
         display: none;
     }
 
+    .carousel-section-2 {
+        justify-content: center;
+        align-items: center;
+    }
+
 
     /** Slider **/
 
     .slider {
         display: flex;
+        position: relative;
+        background-color: black;
+        
+        width: 200px;
+        height: 293px;
+
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;        
+    }
+
+    .slider input {
+        z-index: 2;
+    }
+
+    .slider-wrapper {
+        z-index: 1;
+
+        display: flex;
+        position: absolute;
+
+        width: 500%;
+        height: 100%;
+
+        transition: all 1s ease-in-out;
+    }
+
+    .slider-element {
+        width: calc(100% / 5);
+        height: 100%;
+    }
+
+    .element-one {
+        background-image: url(../img/carousel-1.jpg);
+        background-size: cover;
+    }
+
+    .element-two {
+        background-image: url(../img/carousel-2.jpg);
+        background-size: cover;
+    }
+
+    .element-three {
+        background-image: url(../img/carousel-3.jpg);
+        background-size: cover;
+    }
+
+    .element-four {
+        background-image: url(../img/carousel-4.jpg);
+        background-size: cover;
+    }
+
+    .element-five {
+        background-image: url(../img/carousel-5.jpg);
+        background-size: cover;
+    }
+
+    .slider input[value="carousel-1"]:checked~.slider-wrapper {
+        transform: translateX(calc(200% / 5));
+    }
+
+    .slider input[value="carousel-2"]:checked~.slider-wrapper {
+        transform: translateX(calc(100% / 5));
+    }
+
+    .slider input[value="carousel-3"]:checked~.slider-wrapper {
+        transform: translateX(calc(0% / 5));
+    }
+
+    .slider input[value="carousel-4"]:checked~.slider-wrapper {
+        transform: translateX(calc(-100% / 5));
+    }
+
+    .slider input[value="carousel-5"]:checked~.slider-wrapper {
+        transform: translateX(calc(-200% / 5));
     }
 }
