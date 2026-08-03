@@ -38,15 +38,15 @@ body {
 
 header {
     background-color: var(--primary-color);
-    
+
     font-family: var(--headlines);
     font-size: 24px;
-    
+
     padding: 0px 80px;
-    }
+}
 
 .header-content {
-   
+
     height: 128px;
 
     margin: 0 auto;
@@ -62,6 +62,10 @@ header {
     /* Sorgt dafür, dass das Logo nicht verzerrt */
 }
 
+.header-home-button {
+    display: none;
+}
+
 
 nav ul {
     display: flex;
@@ -75,9 +79,13 @@ nav ul a {
     text-decoration: none;
 }
 
+nav img {
+    display: none;
+}
+
 main {
     flex: 1;
-    }
+}
 
 main p {
     color: #54370D;
@@ -196,7 +204,7 @@ h3 {
     top: 55%;
     right: 0;
     transform: translateX(-35%);
-    
+
 
     width: 140px;
     height: auto;
@@ -496,7 +504,7 @@ input {
     border-bottom: 2px solid #54370D;
     outline: none;
     padding: 8px 0;
-    
+
 }
 
 .input-p {
@@ -509,7 +517,7 @@ input {
 .contact-form-inputs {
     display: flex;
     flex-direction: column;
-    
+
     gap: 64px;
     width: 100%;
     max-width: 1200px;
@@ -523,7 +531,7 @@ input {
 .contact-form-inputs-top-left {
     display: flex;
     flex-direction: column;
-   
+
     gap: 17px;
     flex: 1;
 }
@@ -532,7 +540,7 @@ input {
     display: flex;
     flex: 1;
     flex-direction: column;
-    
+
     gap: 17px;
 }
 
@@ -570,43 +578,55 @@ input {
        HERO-SECTION VERKLEINERN (Tablet)
        ========================================== */
     .hero-section-text {
-        max-width: 220px; /* Schmaler, damit es im Vektor bleibt */
-        left: 10%;        /* Leicht nach links gerückt für mehr Platz */
+        max-width: 220px;
+        /* Schmaler, damit es im Vektor bleibt */
+        left: 10%;
+        /* Leicht nach links gerückt für mehr Platz */
     }
 
-    .hero-section-text > h3 {
-        font-size: 48px;  /* Von 60px herunterskaliert */
+    .hero-section-text>h3 {
+        font-size: 48px;
+        /* Von 60px herunterskaliert */
     }
 
-    .hero-section-text > p {
-        font-size: 24px;  /* Von 28px herunterskaliert */
+    .hero-section-text>p {
+        font-size: 24px;
+        /* Von 28px herunterskaliert */
         line-height: 1.2;
     }
 
     .hero-section-circle {
-        width: 120px;      /* Skaliert den dekorativen Kreis mit */
+        width: 120px;
+        /* Skaliert den dekorativen Kreis mit */
         height: auto;
         transform: translateX(-25%);
     }
 
     .p {
-        font-size: 20px;  /* Leicht kleinere Schriftgröße für Tablets */
-        line-height: 1.4; /* Etwas mehr Zeilenhöhe für bessere Lesbarkeit */
-        justify-content: center; /* Zentriert den Text auf Tablets */
-            }
+        font-size: 20px;
+        /* Leicht kleinere Schriftgröße für Tablets */
+        line-height: 1.4;
+        /* Etwas mehr Zeilenhöhe für bessere Lesbarkeit */
+        justify-content: center;
+        /* Zentriert den Text auf Tablets */
+    }
 
-        .slider-section-text {
-        font-size: 20px;  /* Leicht kleinere Schriftgröße für Tablets */  
-        justify-content: center; /* Zentriert den Text auf Tablets */  
-         }
+    .slider-section-text {
+        font-size: 20px;
+        /* Leicht kleinere Schriftgröße für Tablets */
+        justify-content: center;
+        /* Zentriert den Text auf Tablets */
+    }
 
-         .slider-Landing_page{
-        
-        justify-content: center; /* Zentriert den Text auf Tablets */  
-         }
+    .slider-Landing_page {
+
+        justify-content: center;
+        /* Zentriert den Text auf Tablets */
+    }
 
     .FAQ {
-        font-size: 48px;  /* Leicht kleinere Überschrift für Tablets */
+        font-size: 48px;
+        /* Leicht kleinere Überschrift für Tablets */
     }
 }
 
@@ -625,21 +645,28 @@ input {
        HERO-SECTION OPTIMIERUNG
        ========================================== */
     .hero {
-        display: block; /* Stellt sicher, dass die Sektion auf Handys korrekt angezeigt wird */
-        background-size: cover; /* Füllt jetzt den gesamten rechten Bereich aus (kein weißer Rand mehr!) */
-        background-position: center right; /* Richtet das Foto optimal aus */
-        min-height: 250px; /* Gibt der Sektion eine stabile Höhe auf Handys */
+        display: block;
+        /* Stellt sicher, dass die Sektion auf Handys korrekt angezeigt wird */
+        background-size: cover;
+        /* Füllt jetzt den gesamten rechten Bereich aus (kein weißer Rand mehr!) */
+        background-position: center right;
+        /* Richtet das Foto optimal aus */
+        min-height: 250px;
+        /* Gibt der Sektion eine stabile Höhe auf Handys */
     }
 
     .hero-section-yellow {
-        width: 55%; 
+        width: 55%;
         display: flex;
-        align-items: center; /* Zentriert den Inhalt vertikal im gelben Bereich */
+        align-items: center;
+        /* Zentriert den Inhalt vertikal im gelben Bereich */
     }
 
     .hero-Vector {
-        object-fit: cover; /* Verhindert, dass sich die gelbe Grafik verzerrt */
-        height: 100%; /* Stellt sicher, dass das Bild die volle Höhe des Containers einnimmt */
+        object-fit: cover;
+        /* Verhindert, dass sich die gelbe Grafik verzerrt */
+        height: 100%;
+        /* Stellt sicher, dass das Bild die volle Höhe des Containers einnimmt */
     }
 
     .hero-section-text {
@@ -648,12 +675,13 @@ input {
         transform: translateY(-50%);
     }
 
-    .hero-section-text > h3 {
-        font-size: 36px; /* Sauber lesbar */
+    .hero-section-text>h3 {
+        font-size: 36px;
+        /* Sauber lesbar */
         margin-bottom: 8px;
     }
 
-    .hero-section-text > p {
+    .hero-section-text>p {
         font-size: 18px;
         line-height: 1.5;
     }
@@ -663,18 +691,23 @@ input {
         transform: translateX(-50%);
     }
 
-       footer {
-        flex-direction: column;    /* Elemente untereinander statt nebeneinander */
-        height: auto;              /* Hebt die starre Höhe von 128px auf */
-        padding: 40px 20px;        /* Schafft Platz nach oben und unten */
-        gap: 24px;                 /* Abstand zwischen Text-Links und Icons */
+    footer {
+        flex-direction: column;
+        /* Elemente untereinander statt nebeneinander */
+        height: auto;
+        /* Hebt die starre Höhe von 128px auf */
+        padding: 40px 20px;
+        /* Schafft Platz nach oben und unten */
+        gap: 24px;
+        /* Abstand zwischen Text-Links und Icons */
         text-align: center;
     }
 
-  
-    
+
+
     .social-icon {
-        width: 18px;               /* Einheitliche Größe für alle 3 Icons */
+        width: 18px;
+        /* Einheitliche Größe für alle 3 Icons */
         height: 18px;
         object-fit: contain;
     }
@@ -683,16 +716,20 @@ input {
         justify-content: center;
     }
 
-  .contact-form-inputs {
-        width: 100% !important; /* Hebt die 1200px auf */
+    .contact-form-inputs {
+        width: 100% !important;
+        /* Hebt die 1200px auf */
         max-width: 100%;
-        gap: 32px; /* Verringert den riesigen Abstand zwischen Elementen */
+        gap: 32px;
+        /* Verringert den riesigen Abstand zwischen Elementen */
     }
 
     .input-top {
-        width: 100% !important; /* Hebt die 575px auf */
+        width: 100% !important;
+        /* Hebt die 575px auf */
         max-width: 575px;
     }
+
     /* Die obere Reihe (Name / Email) bricht untereinander um */
     .contact-form-inputs-top {
         flex-direction: column;
@@ -712,9 +749,90 @@ input {
     }
 
     .input-bottom {
-        width: 100% !important; /* Zwingt die lange Linie, sich dem Bildschirm anzupassen */
-        max-width: 575px; /* Optional: Begrenzung, damit es nicht zu lang wird */
+        width: 100% !important;
+        /* Zwingt die lange Linie, sich dem Bildschirm anzupassen */
+        max-width: 575px;
+        /* Optional: Begrenzung, damit es nicht zu lang wird */
     }
 }
 
 
+@media (max-width: 480px) {
+    .header {
+        height: 70px;
+    }
+
+    .header-logo {
+        width: 56px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .header-content> a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .header nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+
+        padding: 24px 25px;
+
+        background-color: var(--primary-color);
+        z-index: 1000;
+    }
+
+    .header-content {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-home-button {
+        display: block;
+        width: 30px;
+}
+
+    nav span {
+        display: none;
+    }
+
+    nav img {
+        display: block;
+        width: 30px;
+    }
+
+    .header nav {
+        width: 100%;
+    }
+
+    .header nav ul {
+        width: 100%;
+        padding: 0;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        gap: 0;
+    }
+
+    .header nav a {
+        color: var(--primary-color);
+        font-size: 16px;
+    }
+
+    body {
+        padding-bottom: 70px;
+    }
+}
