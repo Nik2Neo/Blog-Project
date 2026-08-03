@@ -526,4 +526,10 @@ h1 {
         font-size: 8px;
         line-height: 0.8;
     }
+
+    .share-arrow {
+        left: 10px;
+        width: 70px;
+        height: auto;
+    }
 }
