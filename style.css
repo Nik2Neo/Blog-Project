@@ -277,10 +277,12 @@ h3 {
     overflow: hidden;
 
     border-top-right-radius: 100px;
+   
+    cursor: pointer;
 }
 
-.slider-landing_page input {
-    z-index: 2;
+.slider-landing_page input[type="radio"] {
+    display: none;
 }
 
 .slider-landing_page_wrapper {
