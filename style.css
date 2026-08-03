@@ -236,11 +236,12 @@ h3 {
 .slider-section-text-headline {
     display: flex;
     align-items: center;
+
+    gap: 8px;
 }
 
-.slider-section-text-headline h1 {
+.slider-section-text-headline{
     color: var(--primary-color);
-    font-size: 52px;
 }
 
 .slider-section-text {
@@ -249,9 +250,7 @@ h3 {
     line-height: 1.1;
 }
 
-.slider-section-text-headline img {
-    height: 48px;
-}
+
 
 /**Slider**/
 
@@ -356,9 +355,8 @@ h3 {
     text-align: left;
 }
 
-.slider-landing_page_element_text h2 {
+.slider-landing_page_element_text h2{
     font-family: var(--texts);
-    font-size: 48px;
     font-weight: bold;
     color: white;
     line-height: 1;
@@ -400,12 +398,7 @@ h3 {
 }
 
 .FAQ h2 {
-    font-size: 52px;
     height: fit-content;
-}
-
-.FAQ img {
-    padding-bottom: 5px;
 }
 
 .FAQ-questions {
@@ -634,6 +627,18 @@ input {
 
 @media (max-width: 768px) {
 
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
     main {
         padding: 40px 20px;
         /* Weniger Abstand links/rechts, damit der Inhalt Platz hat */
@@ -758,6 +763,18 @@ input {
 
 
 @media (max-width: 480px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+    
     .header {
         height: 70px;
     }
@@ -767,15 +784,15 @@ input {
         height: auto;
         align-items: center;
         justify-content: center;
-        
+
     }
 
-    .header-content> a {
+    .header-content>a {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
+
     .header nav {
         position: fixed;
         bottom: 0;
@@ -801,7 +818,7 @@ input {
     .header-home-button {
         display: block;
         width: 30px;
-}
+    }
 
     nav span {
         display: none;
@@ -834,5 +851,17 @@ input {
 
     body {
         padding-bottom: 70px;
+    }
+
+    .slider-section-text-headline>img {
+        width: 40px;
+    }
+
+    .FAQ>img {
+        width: 40px;
+    }
+
+    .contact-headline>img {
+        width: 40px;
     }
 }
