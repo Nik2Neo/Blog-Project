@@ -404,6 +404,7 @@ h3 {
 .FAQ-questions {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     width: 100%;
 
