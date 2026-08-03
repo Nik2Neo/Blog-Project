@@ -123,7 +123,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-self: center;
-    height: 550px;
+    max-height: 550px;
     gap: 64px;
     width: 100%;
 }
@@ -287,6 +287,10 @@ h1 {
     right: 310px;
 }
 
+.slider {
+    display: none;
+}
+
 
 /** Responsiveness **/
 
@@ -317,15 +321,18 @@ h1 {
     .intro-left p {
         font-size: 18px;
     }
+    
 
-    /**Carousel**/
+    /** Carousel **/
 
     .carousel-slide {
-        height: 293px;
+        display: none;
     }
 
-    .carousel-element {
-        width: 200px;
+
+    /** Slider **/
+
+    .slider {
+        display: flex;
     }
-    
 }
