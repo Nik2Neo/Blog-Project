@@ -679,6 +679,10 @@ input {
         object-fit: contain;
     }
 
+    .contact-form {
+        justify-content: center;
+    }
+
   .contact-form-inputs {
         width: 100% !important; /* Hebt die 1200px auf */
         max-width: 100%;
@@ -698,16 +702,12 @@ input {
 
     /* Die linken und rechten Spalten nutzen jetzt 100% statt 600px */
     .contact-form-inputs-top-left,
-    .contact-form-inputs-top-right {
+    .contact-form-inputs-top-right,
+    .contact-form-inputs-bottom {
         width: 100% !important;
-        gap: 12px;
-    }
-
-     .contact-form-inputs-bottom {
-        width: 100% !important; /* Hebt die feste Breite auf */
-        max-width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 12px;
     }
 
