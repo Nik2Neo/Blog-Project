@@ -413,6 +413,8 @@ h3 {
     width: 100%;
 
     gap: 32px;
+    
+    align-items: center;
 }
 
 .questions {
