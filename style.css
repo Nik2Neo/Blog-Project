@@ -431,7 +431,6 @@ h3 {
     flex-direction: column;
     gap: 56px;
     padding-bottom: 120px;
-    
 }
 
 .contact {
@@ -476,6 +475,7 @@ h3 {
     gap: 8px;
     align-items: center;
     justify-content: center;
+    width: 100%;
 
     color: #54370D;
     font-size: 15px;
@@ -496,16 +496,8 @@ input {
     border-bottom: 2px solid #54370D;
     outline: none;
     padding: 8px 0;
+    
 }
-
-.input-top {
-    width: 575px;
-   
-}
-
-.input-bottom {
-    width: 1200px;
-    }
 
 .input-p {
     font-size: 24px;
@@ -517,8 +509,10 @@ input {
 .contact-form-inputs {
     display: flex;
     flex-direction: column;
-    width: 1200px;
+    
     gap: 64px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .contact-form-inputs-top {
@@ -529,14 +523,16 @@ input {
 .contact-form-inputs-top-left {
     display: flex;
     flex-direction: column;
-    width: 600px;
+   
     gap: 17px;
+    flex: 1;
 }
 
 .contact-form-inputs-top-right {
     display: flex;
+    flex: 1;
     flex-direction: column;
-    width: 600px;
+    
     gap: 17px;
 }
 
