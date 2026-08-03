@@ -649,6 +649,10 @@ input {
         font-size: 24px;
     }
 
+    p {
+        font-size: 18px;
+    }
+
     main {
         padding: 40px 20px;
         /* Weniger Abstand links/rechts, damit der Inhalt Platz hat */
@@ -785,6 +789,10 @@ input {
 
     h3 {
         font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
     }
     
     .header {
