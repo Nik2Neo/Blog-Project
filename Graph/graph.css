@@ -198,6 +198,32 @@ main {
         padding: 64px 24px;
     }
 
+    .intro-top {
+        flex-wrap: wrap;
+    }
+
+    .intro-left {
+
+        min-width: 300px;
+
+    }
+
+    .intro-left p {
+        font-size: 18px;
+        /* Vorher 28px - kompakter für kleinere Bildschirme */
+        line-height: 1.4;
+        flex-wrap: wrap;
+        /* Damit der Text nicht aus dem Bildschirm läuft */
+    }
+    .intro-right {
+        width: 100%;
+          max-width: 1080px;
+        min-width: 272px;
+
+        /* Damit die Box nicht zu groß wird */
+        margin: 0 auto;
+        /* Zentriert die Box auf kleineren Bildschirmen */
+
     .informations-section {
         justify-content: center;
     }
@@ -210,6 +236,14 @@ main {
 @media (max-width: 768px) {
     main {
         padding: 48px 16px;
+    }
+
+    .intro-left p {
+        font-size: 18px;
+        /* Vorher 28px - kompakter für kleinere Bildschirme */
+        line-height: 1.4;
+        flex-wrap: wrap;
+        /* Damit der Text nicht aus dem Bildschirm läuft */
     }
 }
 
@@ -230,4 +264,30 @@ main {
         width: 70px;
         height: auto;
     }
+
+    .intro-left p {
+        font-size: 18px;
+        /* Vorher 28px - kompakter für kleinere Bildschirme */
+        line-height: 1.1;
+        flex-wrap: wrap;
+        /* Damit der Text nicht aus dem Bildschirm läuft */
+    }
+
+    .intro-icons {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr); /* Teilt den Platz in 2 gleich große Spalten */
+        gap: 16px 20px; /* 16px Abstand nach unten, 20px nach rechts */
+        justify-content: center;
+        width: 100%;
+    }
+
+    .intro-icons-item {
+        display: flex;
+        flex-direction: row; /* Icon und Text bleiben sauber nebeneinander */
+        align-items: center;
+        gap: 8px;
+        font-size: 14px; /* Leicht kleinere Schrift, damit es perfekt passt */
+        white-space: nowrap; /* Verhindert, dass Wörter wie "min." alleine in der Zeile stehen */
+    }
+
 }
