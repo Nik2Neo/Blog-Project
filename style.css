@@ -282,7 +282,9 @@ h3 {
 }
 
 .slider-landing_page input[type="radio"] {
-    display: none;
+    display: block;
+    position: relative;
+    z-index: 3;
 }
 
 .slider-landing_page_wrapper {
