@@ -609,6 +609,31 @@ input {
 
 
 @media (max-width: 1024px) {
+    h1 {
+        font-size: 52px;
+        line-height: 1.1;
+    }
+
+    h2 {
+        font-size: 40px;
+        line-height: 1.1;
+    }
+
+    h3 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+
+    p {
+        font-size: 20px;
+        /* Leicht kleinere Schriftgröße für Tablets */
+        line-height: 1.4;
+        /* Etwas mehr Zeilenhöhe für bessere Lesbarkeit */
+        justify-content: center;
+        /* Zentriert den Text auf Tablets */
+    }
+
 
     main {
         padding: 40px 20px;
@@ -645,15 +670,6 @@ input {
         transform: translateX(-25%);
     }
 
-    .p {
-        font-size: 20px;
-        /* Leicht kleinere Schriftgröße für Tablets */
-        line-height: 1.4;
-        /* Etwas mehr Zeilenhöhe für bessere Lesbarkeit */
-        justify-content: center;
-        /* Zentriert den Text auf Tablets */
-    }
-
     .slider-section-text {
         font-size: 20px;
         /* Leicht kleinere Schriftgröße für Tablets */
@@ -678,15 +694,18 @@ input {
 @media (max-width: 768px) {
 
     h1 {
-        font-size: 48px;
+        font-size: 42px;
+        line-height: 1.1;
     }
 
     h2 {
-        font-size: 40px;
+        font-size: 34px;
+        line-height: 1.2;
     }
 
     h3 {
         font-size: 24px;
+        line-height: 1.2;
     }
 
     p {
@@ -844,7 +863,6 @@ input {
         height: auto;
         align-items: center;
         justify-content: center;
-
     }
 
     .header-content>a {
