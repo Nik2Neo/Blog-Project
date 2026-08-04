@@ -72,6 +72,7 @@ nav ul {
     list-style-type: none;
     gap: 72px;
     justify-content: center;
+    padding: 0;
 }
 
 nav ul a {
@@ -636,7 +637,6 @@ input {
         /* Zentriert den Text auf Tablets */
     }
 
-
     main {
         padding: 40px 20px;
         /* Weniger Abstand links/rechts, damit der Inhalt Platz hat */
@@ -712,6 +712,10 @@ input {
 
     p {
         font-size: 18px;
+    }
+
+    .header-content span {
+        font-size: 20px;
     }
 
     main {
