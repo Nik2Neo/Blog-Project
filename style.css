@@ -984,16 +984,31 @@ input {
     footer {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        justify-content: center;
+        
     }
 
-    footer ul {
-        position: relative;
+    footer nav ul {
         display: flex;
         flex-direction: column-reverse;
         
         padding-left: 0px;
-        gap: 8px;
+        gap: 0px;
         align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+    }
+
+    .social-icon {
+        object-fit: contain;
+        width: 20px;
+        height: auto;
     }
 
 }
