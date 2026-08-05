@@ -180,14 +180,13 @@ h1 {
     position: relative;
     flex-direction: column;
     justify-self: center;
-
     margin-top: 80px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 120%;
-    padding-top: 80px;
     color: #3D3D3D;
 }
+
 
 .pro-tipps-section-box ol {
     background-color: var(--secondary-color);
@@ -209,22 +208,19 @@ h1 {
 
 .pro-tipp-frame {
     display: flex;
-    position: absolute;
     width: fit-content;
     transform: rotate(-15deg);
-    bottom: 120px;
-    left: -50px;
     gap: 8px;
-
     padding: 8px;
     border-radius: 10px;
-
     background-color: var(--primary-color);
     color: var(--alternative-color);
     font-size: 28px;
     font-weight: bold;
     line-height: 120%;
     text-align: center;
+    position: relative;
+    bottom: 15px;
 }
 
 /**share-section**/
@@ -271,18 +267,19 @@ h1 {
 
 @media (max-width: 1300px) {
 
- .intro-right {
+    .intro-right {
         width: 100%;
-          max-width: 1080px;
+        max-width: 1080px;
         min-width: 272px;
 
         /* Damit die Box nicht zu groß wird */
         margin: 0 auto;
         /* Zentriert die Box auf kleineren Bildschirmen */
-    
-    
+
+
     }
-    }
+}
+
 
 @media (max-width: 1024px) {
 
@@ -332,204 +329,265 @@ h1 {
         flex-wrap: wrap;
         /* Damit der Text nicht aus dem Bildschirm läuft */
     }
+
     .intro-right {
         width: 100%;
-          max-width: 1080px;
+        max-width: 1080px;
         min-width: 272px;
 
         /* Damit die Box nicht zu groß wird */
         margin: 0 auto;
         /* Zentriert die Box auf kleineren Bildschirmen */
-    
-    
+
     }
 
-    /* Das Schild wird exakt mittig über der Box platziert */
-    .pro-tipp-frame {
-        position: absolute;
-        top: -20px;           /* Schiebt das Schild halb über den oberen Rand der Box */
-        left: 50%;            /* Setzt den Startpunkt genau in die Mitte der Seite */
-        right: auto;          /* Hebt vorherige Rechts-Ausrichtungen auf */
-        bottom: auto;         /* Hebt vorherige Unten-Ausrichtungen auf */
-        
-        /* Der Trick für perfekte Zentrierung + eine ganz leichte, stilvolle Drehung */
-        transform: translateX(-50%) ; 
-        
-        width: fit-content;
-        margin: 0 auto;
+    /** Schriftgröße **/
+    .video-text {
+
+        font-size: 24px;
+
+
     }
 
-    /* Die eigentliche Tipp-Box darunter */
-    .pro-tipps-section-box ol {
-        padding: 24px;        /* Gleichmäßiger Abstand auf allen Seiten */
+
+    @media (max-width: 768px) {
+
+        /* 1. MAIN ANPASSEN */
+        main {
+            padding: 40px 20px;
+            /* Weniger Abstand links/rechts, damit der Inhalt Platz hat */
+            height: auto;
+            /* Hebt die starre 100%-Höhe auf, falls der Text länger wird */
+        }
+
+        /* 2. ÜBERSCHRIFTEN COMPACT MACHEN */
+        h2 {
+            font-size: 18px;
+            /* Vorher 40px - viel zu groß für Tablets */
+            line-height: 1.3;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            /* Damit die Überschrift nicht aus dem Bildschirm läuft */
+        }
+
+        h1 {
+            font-size: 32px;
+            /* Vorher 64px - bricht sonst unschön um */
+            line-height: 1.2;
+            font-weight: 700;
+            /* Das falsche Wort "bold" hier korrigiert */
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            /* Damit die Überschrift nicht aus dem Bildschirm läuft */
+        }
+
+        .intro-left p {
+            font-size: 18px;
+            /* Vorher 28px - kompakter für kleinere Bildschirme */
+            line-height: 1.4;
+            flex-wrap: wrap;
+            /* Damit der Text nicht aus dem Bildschirm läuft */
+        }
+
+        footer {
+            flex-direction: column;
+            /* Elemente untereinander statt nebeneinander */
+            height: auto;
+            /* Hebt die starre Höhe von 128px auf */
+            padding: 40px 20px;
+            /* Schafft Platz nach oben und unten */
+            gap: 24px;
+            /* Abstand zwischen Text-Links und Icons */
+            text-align: center;
+        }
+
+
+        .socials {
+            display: grid;
+            grid-template-columns: repeat(2, 44px);
+            /* 2 Spalte, genau so breit wie deine Icons */
+            gap: 16px;
+            justify-content: space-around;
+            /* Zentriert das quadratische Grid im Footer */
+        }
+
+        .social-icon {
+            width: 18px;
+            /* Einheitliche Größe für alle 3 Icons */
+            height: 18px;
+            object-fit: contain;
+        }
+
+        .p {
+            font-size: 16px;
+            line-height: 1.2;
+        }
+
+        /** Schriftgröße **/
+        .video-text {
+
+            font-size: 18px;
+
+
+        }
+
+
+
+
+        .pro-tipp-frame {
+
+            font-size: 20px;
+            bottom: 0px;
+
+        }
+
+        .pro-tipps-section-lightbulb {
+
+            height: 24px;
+
+        }
+
+
     }
 
-    /** Images **/
-   
 
-}
+    @media (max-width: 480px) {
 
+        /* 1. MAIN ANPASSEN */
+        main {
+            padding: 20px 10px;
+            /* Weniger Abstand links/rechts, damit der Inhalt Platz hat */
+            height: auto;
+            /* Hebt die starre 100%-Höhe auf, falls der Text länger wird */
+        }
 
-@media (max-width: 768px) {
+        /* 2. ÜBERSCHRIFTEN COMPACT MACHEN */
+        h2 {
+            font-size: 10px;
+            /* Vorher 40px - viel zu groß für Tablets */
+            line-height: 0.9;
+            margin-bottom: 5px;
+            flex-wrap: wrap;
+            /* Damit die Überschrift nicht aus dem Bildschirm läuft */
+        }
 
-    /* 1. MAIN ANPASSEN */
-    main {
-        padding: 40px 20px;
-        /* Weniger Abstand links/rechts, damit der Inhalt Platz hat */
-        height: auto;
-        /* Hebt die starre 100%-Höhe auf, falls der Text länger wird */
-    }
+        h1 {
+            font-size: 14px;
+            /* Vorher 64px - bricht sonst unschön um */
+            line-height: 1.2;
+            font-weight: 700;
+            /* Das falsche Wort "bold" hier korrigiert */
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            /* Damit die Überschrift nicht aus dem Bildschirm läuft */
+        }
 
-    /* 2. ÜBERSCHRIFTEN COMPACT MACHEN */
-    h2 {
-        font-size: 18px;
-        /* Vorher 40px - viel zu groß für Tablets */
-        line-height: 1.3;
-        margin-bottom: 10px;
-        flex-wrap: wrap;
-        /* Damit die Überschrift nicht aus dem Bildschirm läuft */
-    }
-
-    h1 {
-        font-size: 32px;
-        /* Vorher 64px - bricht sonst unschön um */
-        line-height: 1.2;
-        font-weight: 700;
-        /* Das falsche Wort "bold" hier korrigiert */
-        margin-bottom: 20px;
-        flex-wrap: wrap;
-        /* Damit die Überschrift nicht aus dem Bildschirm läuft */
-    }
-
-    .intro-left p {
-        font-size: 18px;
-        /* Vorher 28px - kompakter für kleinere Bildschirme */
-        line-height: 1.4;
-        flex-wrap: wrap;
-        /* Damit der Text nicht aus dem Bildschirm läuft */
-    }
-
-     footer {
-        flex-direction: column;    /* Elemente untereinander statt nebeneinander */
-        height: auto;              /* Hebt die starre Höhe von 128px auf */
-        padding: 40px 20px;        /* Schafft Platz nach oben und unten */
-        gap: 24px;                 /* Abstand zwischen Text-Links und Icons */
-        text-align: center;
-    }
-
-  
-    .socials {
-        display: grid;
-        grid-template-columns: repeat(2, 44px); /* 2 Spalte, genau so breit wie deine Icons */
-        gap: 16px;
-        justify-content: space-around;   /* Zentriert das quadratische Grid im Footer */
-    }
-    
-    .social-icon {
-        width: 18px;               /* Einheitliche Größe für alle 3 Icons */
-        height: 18px;
-        object-fit: contain;
-    }
-
-    .p {
-        font-size: 16px;
-        line-height: 1.2;
-    }
-     
-}
+        .intro-left p {
+            font-size: 18px;
+            /* Vorher 28px - kompakter für kleinere Bildschirme */
+            line-height: 1.1;
+            flex-wrap: wrap;
+            /* Damit der Text nicht aus dem Bildschirm läuft */
+        }
 
 
-@media (max-width: 480px) {
+        footer {
+            flex-direction: column;
+            /* Elemente untereinander statt nebeneinander */
+            height: auto;
+            /* Hebt die starre Höhe von 128px auf */
+            padding: 20px 10px;
+            /* Schafft Platz nach oben und unten */
+            gap: 12px;
+            /* Abstand zwischen Text-Links und Icons */
+            text-align: center;
+        }
 
-    /* 1. MAIN ANPASSEN */
-    main {
-        padding: 20px 10px;
-        /* Weniger Abstand links/rechts, damit der Inhalt Platz hat */
-        height: auto;
-        /* Hebt die starre 100%-Höhe auf, falls der Text länger wird */
-    }
+        nav ul {
+            gap: 12px;
+            /* Weniger Abstand zwischen den Navigationslinks */
+        }
 
-    /* 2. ÜBERSCHRIFTEN COMPACT MACHEN */
-    h2 {
-        font-size: 10px;
-        /* Vorher 40px - viel zu groß für Tablets */
-        line-height: 0.9;
-        margin-bottom: 5px;
-        flex-wrap: wrap;
-        /* Damit die Überschrift nicht aus dem Bildschirm läuft */
-    }
 
-    h1 {
-        font-size: 14px;
-        /* Vorher 64px - bricht sonst unschön um */
-        line-height: 1.2;
-        font-weight: 700;
-        /* Das falsche Wort "bold" hier korrigiert */
-        margin-bottom: 15px;
-        flex-wrap: wrap;
-        /* Damit die Überschrift nicht aus dem Bildschirm läuft */
-    }
+        .socials {
+            display: grid;
+            grid-template-columns: repeat(2, 44px);
+            /* 2 Spalten, genau so breit wie deine Icons */
+            gap: 16px;
+            justify-content: center;
+            /* Zentriert das quadratische Grid im Footer */
+        }
 
-    .intro-left p {
-        font-size: 18px;
-        /* Vorher 28px - kompakter für kleinere Bildschirme */
-        line-height: 1.1;
-        flex-wrap: wrap;
-        /* Damit der Text nicht aus dem Bildschirm läuft */
-    }
+        .social-icon {
+            width: 18px;
+            /* Einheitliche Größe für alle 3 Icons */
+            height: 18px;
+            object-fit: contain;
+        }
 
-    
-     footer {
-        flex-direction: column;    /* Elemente untereinander statt nebeneinander */
-        height: auto;              /* Hebt die starre Höhe von 128px auf */
-        padding: 20px 10px;        /* Schafft Platz nach oben und unten */
-        gap: 12px;                 /* Abstand zwischen Text-Links und Icons */
-        text-align: center;
-    }
+        .intro-icons {
+            display: grid !important;
+            grid-template-columns: repeat(2, 1fr);
+            /* Teilt den Platz in 2 gleich große Spalten */
+            gap: 16px 20px;
+            /* 16px Abstand nach unten, 20px nach rechts */
+            justify-content: center;
+            width: 100%;
+        }
 
-    nav ul {
-        gap: 12px;                 /* Weniger Abstand zwischen den Navigationslinks */
-    }
+        .intro-icons-item {
+            display: flex;
+            flex-direction: row;
+            /* Icon und Text bleiben sauber nebeneinander */
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            /* Leicht kleinere Schrift, damit es perfekt passt */
+            white-space: nowrap;
+            /* Verhindert, dass Wörter wie "min." alleine in der Zeile stehen */
+        }
 
-  
-    .socials {
-        display: grid;
-        grid-template-columns: repeat(2, 44px); /* 2 Spalten, genau so breit wie deine Icons */
-        gap: 16px;
-        justify-content: center;   /* Zentriert das quadratische Grid im Footer */
-    }
-    
-    .social-icon {
-        width: 18px;               /* Einheitliche Größe für alle 3 Icons */
-        height: 18px;
-        object-fit: contain;
-    }
+        .p {
+            font-size: 8px;
+            line-height: 0.8;
+        }
 
-    .intro-icons {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr); /* Teilt den Platz in 2 gleich große Spalten */
-        gap: 16px 20px; /* 16px Abstand nach unten, 20px nach rechts */
-        justify-content: center;
-        width: 100%;
-    }
+        /** Schriftgröße **/
+        .video-text {
 
-    .intro-icons-item {
-        display: flex;
-        flex-direction: row; /* Icon und Text bleiben sauber nebeneinander */
-        align-items: center;
-        gap: 8px;
-        font-size: 14px; /* Leicht kleinere Schrift, damit es perfekt passt */
-        white-space: nowrap; /* Verhindert, dass Wörter wie "min." alleine in der Zeile stehen */
-    }
+            font-size: 14px;
 
-    .p {
-        font-size: 8px;
-        line-height: 0.8;
-    }
 
-    .share-arrow {
-        left: 10px;
-        width: 70px;
-        height: auto;
+        }
+
+
+
+        .share-arrow {
+            left: 10px;
+            width: 70px;
+            height: auto;
+        }
+
+        /* Anpassung für kleinere Tablets/große Smartphones */
+
+        .pro-tipps-section {
+
+            font-size: 16px;
+
+        }
+
+        .pro-tipp-frame {
+
+            font-size: 16px;
+            bottom: 0px;
+
+        }
+
+        .pro-tipps-section-lightbulb {
+
+            height: 22px;
+
+        }
+
     }
 }
