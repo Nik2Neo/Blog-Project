@@ -776,15 +776,13 @@ input {
 
     footer {
         flex-direction: column;
-        /* Elemente untereinander statt nebeneinander */
+       
         height: auto;
-        /* Hebt die starre Höhe von 128px auf */
+
         padding: 40px 20px;
-        /* Schafft Platz nach oben und unten */
+       
         gap: 24px;
-        /* Abstand zwischen Text-Links und Icons */
-        text-align: center;
-    }
+            }
 
 
 
@@ -998,7 +996,6 @@ input {
     footer nav ul {
         display: flex;
         flex-direction: column-reverse;
-        
         padding-left: 0px;
         gap: 0px;
         align-items: flex-start;
