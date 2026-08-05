@@ -378,6 +378,7 @@ h1 {
         width: 320px;
         height: 290px;
         overflow: hidden;
+        left: 60px;
     }
 
     .slider-wrapper {
