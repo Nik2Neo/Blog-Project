@@ -342,37 +342,67 @@ h1 {
     /** Slider **/
 
     .slider {
-        display: flex;
-        position: relative;
-        
-        width: 200px;
-        height: 293px;
-
+        display: grid;
+        grid-template-columns: repeat(5, 12px);
         justify-content: center;
-        align-items: flex-end;
-        overflow: hidden;
+        justify-items: center;
+        row-gap: 20px;
+        column-gap: 20px;
     }
 
     .slider input {
+        grid-row: 2;
         z-index: 2;
     }
 
+    .slider input[type="radio"] {
+        appearance: none;
+        margin: 0;
+        width: 12px;
+        height: 12px;
+        border-radius: 32px;
+        background-color: var(--primary-color);
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .slider input[type="radio"]:checked {
+        width: 32px;
+        background-color: var(--secondary-color);
+    }
+
+    .slider-window {
+        grid-row: 1;
+        grid-column: 1 / -1;
+        position: relative;
+        width: 320px;
+        height: 290px;
+        overflow: hidden;
+    }
+
     .slider-wrapper {
-        z-index: 1;
+        top: 0;
+        left: 0;
 
         display: flex;
         position: absolute;
+        gap: 20px;
 
-        width: 500%;
-        height: 100%;
+        width: fit-content;
+        height: 290px;
 
         transition: all 1s ease-in-out;
     }
 
     .slider-element {
-        width: calc(100% / 5);
-        height: 100%;
+        width: 200px;
+        height: 290px;
+        flex-shrink: 0;
         border-radius: 16px;
+
+        transform: perspective(500px) rotateY(-25deg);
+        transform-origin: right center;
+        transition: all 1s ease-in-out;
     }
 
     .element-one {
@@ -400,23 +430,39 @@ h1 {
         background-size: cover;
     }
 
-    .slider input[value="carousel-1"]:checked~.slider-wrapper {
-        transform: translateX(calc(200% / 5));
+    .slider input[value="carousel-1"]:checked ~ .slider-window .slider-wrapper {
+    transform: translateX(0px);
     }
 
-    .slider input[value="carousel-2"]:checked~.slider-wrapper {
-        transform: translateX(calc(100% / 5));
+    .slider input[value="carousel-1"]:checked ~ .slider-window .slider-wrapper .element-one {
+        transform: perspective(500px) rotateY(0deg);
     }
 
-    .slider input[value="carousel-3"]:checked~.slider-wrapper {
-        transform: translateX(calc(0% / 5));
+    .slider input[value="carousel-2"]:checked ~ .slider-window .slider-wrapper {
+        transform: translateX(-220px);
+    }
+    .slider input[value="carousel-2"]:checked ~ .slider-window .slider-wrapper .element-two {
+        transform: perspective(500px) rotateY(0deg);
     }
 
-    .slider input[value="carousel-4"]:checked~.slider-wrapper {
-        transform: translateX(calc(-100% / 5));
+    .slider input[value="carousel-3"]:checked ~ .slider-window .slider-wrapper {
+        transform: translateX(-440px);
+    }
+    .slider input[value="carousel-3"]:checked ~ .slider-window .slider-wrapper .element-three {
+        transform: perspective(500px) rotateY(0deg);
     }
 
-    .slider input[value="carousel-5"]:checked~.slider-wrapper {
-        transform: translateX(calc(-200% / 5));
+    .slider input[value="carousel-4"]:checked ~ .slider-window .slider-wrapper {
+        transform: translateX(-660px);
+    }
+    .slider input[value="carousel-4"]:checked ~ .slider-window .slider-wrapper .element-four {
+        transform: perspective(500px) rotateY(0deg);
+    }
+
+    .slider input[value="carousel-5"]:checked ~ .slider-window .slider-wrapper {
+        transform: translateX(-880px);
+    }
+    .slider input[value="carousel-5"]:checked ~ .slider-window .slider-wrapper .element-five {
+        transform: perspective(500px) rotateY(0deg);
     }
 }
