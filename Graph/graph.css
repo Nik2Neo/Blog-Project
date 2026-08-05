@@ -215,7 +215,7 @@ main {
     }
     .intro-right {
         width: 100%;
-          max-width: 1080px;
+        max-width: 1080px;
         min-width: 272px;
 
         /* Damit die Box nicht zu groß wird */
