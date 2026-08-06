@@ -236,12 +236,22 @@ main {
         padding: 48px 16px;
     }
 
+    header nav {
+        max-width: 100vw;
+        padding: 24px 0;
+    }
+
     .intro-left p {
         font-size: 18px;
         /* Vorher 28px - kompakter für kleinere Bildschirme */
         line-height: 1.4;
         flex-wrap: wrap;
         /* Damit der Text nicht aus dem Bildschirm läuft */
+    }
+
+    /**Intro-Top**/
+    .intro-top {
+        max-width: 100vw;
     }
 }
 

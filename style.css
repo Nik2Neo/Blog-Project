@@ -912,6 +912,7 @@ input {
 
     .header nav {
         width: 100%;
+        padding: 24px 0;
     }
 
     .header nav ul {
