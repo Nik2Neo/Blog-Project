@@ -359,8 +359,8 @@ h1 {
     .slider input[type="radio"] {
         appearance: none;
         margin: 0;
-        width: 12px;
-        height: 12px;
+        width: 10px;
+        height: 6px;
         border-radius: 32px;
         background-color: var(--primary-color);
         cursor: pointer;
@@ -368,7 +368,7 @@ h1 {
     }
 
     .slider input[type="radio"]:checked {
-        width: 32px;
+        width: 16px;
         background-color: var(--secondary-color);
     }
 
@@ -441,28 +441,28 @@ h1 {
     }
 
     .slider input[value="carousel-2"]:checked ~ .slider-window .slider-wrapper {
-        transform: translateX(-220px);
+        transform: translateX(-110px);
     }
     .slider input[value="carousel-2"]:checked ~ .slider-window .slider-wrapper .element-two {
         transform: perspective(500px) rotateY(0deg);
     }
 
     .slider input[value="carousel-3"]:checked ~ .slider-window .slider-wrapper {
-        transform: translateX(-440px);
+        transform: translateX(-220px);
     }
     .slider input[value="carousel-3"]:checked ~ .slider-window .slider-wrapper .element-three {
         transform: perspective(500px) rotateY(0deg);
     }
 
     .slider input[value="carousel-4"]:checked ~ .slider-window .slider-wrapper {
-        transform: translateX(-660px);
+        transform: translateX(-330px);
     }
     .slider input[value="carousel-4"]:checked ~ .slider-window .slider-wrapper .element-four {
         transform: perspective(500px) rotateY(0deg);
     }
 
     .slider input[value="carousel-5"]:checked ~ .slider-window .slider-wrapper {
-        transform: translateX(-880px);
+        transform: translateX(-440px);
     }
     .slider input[value="carousel-5"]:checked ~ .slider-window .slider-wrapper .element-five {
         transform: perspective(500px) rotateY(0deg);
@@ -491,12 +491,31 @@ h1 {
     }
 
     .share-arrow {
-        left: 10px;
+        left: -15px;
         width: 70px;
         height: auto;
     }
 
     .share-button-area {
         max-width: 100%;
+    }
+
+    .slider-element {
+        width: 100px;
+        height: 145px;
+    }
+
+    .slider-wrapper {
+        gap: 10px;
+
+        width: fit-content;
+        height: 145px;
+    }
+
+    .slider-window {
+        width: 160px;
+        height: 145px;
+        overflow: hidden;
+        left: 30px;
     }
 }
