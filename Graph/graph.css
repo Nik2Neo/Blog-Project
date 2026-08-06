@@ -189,6 +189,11 @@ main {
     right: 310px;
 }
 
+button {
+    all: unset;
+    cursor: pointer; 
+}
+
 /**Responsivnes**/
 
 @media (max-width: 1279px) {
@@ -318,4 +323,39 @@ main {
         max-width: 80%;
     }
 
-}
+    .share-arrow {
+        left: -15px;
+        width: 70px;
+        height: auto;
+    }
+
+    .share-button-area {
+        max-width: 100%;
+    }
+
+    .informations-section {
+        gap: 32px;
+        padding-top: 32px;
+    }
+
+    .informations-section-top {
+        gap: 20px;
+    } 
+
+    .weather-section p {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .share-button {
+        all: unset;
+        cursor: pointer; /* Optional: Zeigt wieder den Klick-Mauszeiger */
+        }
+
+    button {
+        all: unset;
+        cursor: pointer; 
+        }
+    }
+
+

@@ -261,6 +261,11 @@ h1 {
     right: 310px;
 }
 
+button {
+    all: unset;
+    cursor: pointer; 
+}
+
 /**Intro-Top-Left**/
 
 @media (max-width: 1279px) {
@@ -599,6 +604,30 @@ h1 {
 
             height: 22px;
 
+        }
+
+        .share-arrow {
+        left: -15px;
+        width: 70px;
+        height: auto;
+    }
+
+        .share-button-area {
+            max-width: 100%;
+        }
+
+        .video-container {
+            margin: 0;
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        .video-text {
+            padding-top: 32px;
+        }
+
+        .pro-tipps-section {
+            margin-top: 32px;
         }
 
     }

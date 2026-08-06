@@ -291,6 +291,11 @@ h1 {
     display: none;
 }
 
+button {
+    all: unset;
+    cursor: pointer; 
+}
+
 
 /** Responsiveness **/
 
