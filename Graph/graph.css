@@ -249,9 +249,21 @@ main {
         /* Damit der Text nicht aus dem Bildschirm läuft */
     }
 
+    .share-button-area {
+        max-width: 100%;
+    }
+
+    .intro-right {
+        max-width: 100%;
+    }
+
+    .intro-left {
+        max-width: 100%;
+    }
+
     /**Intro-Top**/
     .intro-top {
-        max-width: 100vw;
+        max-width: 100%;
     }
 }
 

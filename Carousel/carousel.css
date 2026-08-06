@@ -495,4 +495,8 @@ h1 {
         width: 70px;
         height: auto;
     }
+
+    .share-button-area {
+        max-width: 100%;
+    }
 }

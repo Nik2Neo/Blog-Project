@@ -275,8 +275,10 @@ h1 {
         /* Damit die Box nicht zu groß wird */
         margin: 0 auto;
         /* Zentriert die Box auf kleineren Bildschirmen */
+    }
 
-
+    .share-button-area {
+        max-width: 100%;
     }
 }
 
