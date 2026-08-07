@@ -786,6 +786,10 @@ input {
         gap: 24px;
     }
 
+    footer li {
+        color: white;
+    }
+
 
 
     .social-icon {

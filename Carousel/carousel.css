@@ -299,6 +299,46 @@ button {
 
 /** Responsiveness **/
 
+@media (max-width: 1279px) {
+    main {
+        padding: 64px 24px;
+    }
+
+    .intro-top {
+        flex-wrap: wrap;
+    }
+
+    .intro-left {
+
+        min-width: 300px;
+
+    }
+
+    .intro-left p {
+        font-size: 18px;
+        /* Vorher 28px - kompakter für kleinere Bildschirme */
+        line-height: 1.4;
+        flex-wrap: wrap;
+        /* Damit der Text nicht aus dem Bildschirm läuft */
+    }
+    .intro-right {
+        width: 100%;
+        max-width: 1080px;
+        min-width: 272px;
+
+        /* Damit die Box nicht zu groß wird */
+        margin: 0 auto;
+        /* Zentriert die Box auf kleineren Bildschirmen */
+    }
+    .informations-section {
+        justify-content: center;
+    }
+
+    .informations-section-top h3{
+        text-align: center;
+    }
+}
+
 
 @media (max-width: 768px) {
 
@@ -317,10 +357,6 @@ button {
 
     .intro-top {
         flex-direction: column;
-    }
-
-    .intro-icons {
-        flex-wrap: wrap;
     }
 
     .intro-right {
@@ -522,5 +558,23 @@ button {
         height: 145px;
         overflow: hidden;
         left: 30px;
+    }
+
+    .intro-icons {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr); /* Teilt den Platz in 2 gleich große Spalten */
+        gap: 6px 8px; /* 16px Abstand nach unten, 20px nach rechts */
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 100%;
+    }
+
+    .carousel-text {
+        padding-top: 32px;
+    }
+
+    .pro-tipps-section {
+        margin-top: 32px;
     }
 }
