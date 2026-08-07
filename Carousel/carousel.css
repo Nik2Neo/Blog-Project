@@ -463,28 +463,28 @@ button {
     }
 
     .slider input[value="carousel-2"]:checked ~ .slider-window .slider-wrapper {
-        transform: translateX(-110px);
+        transform: translateX(-220px);
     }
     .slider input[value="carousel-2"]:checked ~ .slider-window .slider-wrapper .element-two {
         transform: perspective(500px) rotateY(0deg);
     }
 
     .slider input[value="carousel-3"]:checked ~ .slider-window .slider-wrapper {
-        transform: translateX(-220px);
+        transform: translateX(-440px);
     }
     .slider input[value="carousel-3"]:checked ~ .slider-window .slider-wrapper .element-three {
         transform: perspective(500px) rotateY(0deg);
     }
 
     .slider input[value="carousel-4"]:checked ~ .slider-window .slider-wrapper {
-        transform: translateX(-330px);
+        transform: translateX(-660px);
     }
     .slider input[value="carousel-4"]:checked ~ .slider-window .slider-wrapper .element-four {
         transform: perspective(500px) rotateY(0deg);
     }
 
     .slider input[value="carousel-5"]:checked ~ .slider-window .slider-wrapper {
-        transform: translateX(-440px);
+        transform: translateX(-880px);
     }
     .slider input[value="carousel-5"]:checked ~ .slider-window .slider-wrapper .element-five {
         transform: perspective(500px) rotateY(0deg);
@@ -557,5 +557,41 @@ button {
 
     .pro-tipps-section {
         margin-top: 32px;
+    }
+
+    .slider input[value="carousel-1"]:checked ~ .slider-window .slider-wrapper {
+    transform: translateX(0px);
+    }
+
+    .slider input[value="carousel-1"]:checked ~ .slider-window .slider-wrapper .element-one {
+        transform: perspective(500px) rotateY(0deg);
+    }
+
+    .slider input[value="carousel-2"]:checked ~ .slider-window .slider-wrapper {
+        transform: translateX(-110px);
+    }
+    .slider input[value="carousel-2"]:checked ~ .slider-window .slider-wrapper .element-two {
+        transform: perspective(500px) rotateY(0deg);
+    }
+
+    .slider input[value="carousel-3"]:checked ~ .slider-window .slider-wrapper {
+        transform: translateX(-220px);
+    }
+    .slider input[value="carousel-3"]:checked ~ .slider-window .slider-wrapper .element-three {
+        transform: perspective(500px) rotateY(0deg);
+    }
+
+    .slider input[value="carousel-4"]:checked ~ .slider-window .slider-wrapper {
+        transform: translateX(-330px);
+    }
+    .slider input[value="carousel-4"]:checked ~ .slider-window .slider-wrapper .element-four {
+        transform: perspective(500px) rotateY(0deg);
+    }
+
+    .slider input[value="carousel-5"]:checked ~ .slider-window .slider-wrapper {
+        transform: translateX(-440px);
+    }
+    .slider input[value="carousel-5"]:checked ~ .slider-window .slider-wrapper .element-five {
+        transform: perspective(500px) rotateY(0deg);
     }
 }
